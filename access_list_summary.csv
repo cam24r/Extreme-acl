@@ -1,0 +1,1308 @@
+Name,Action,Protocol,Src-Address,Src-Port,Dst-Address,Dst-Port
+Deny_UDP_4444,None,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4444
+Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4996
+Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,69
+Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+Permit_UDP_0.0.0.0,permit,udp,0.0.0.0/0,255.255.255.255/32,68,67
+Permit_icmp_170.70.18.0_reply,permit,icmp,170.70.18.0/24,0.0.0.0/0,any,any
+Permit_icmp_170.70.18.0_request,permit,icmp,170.70.18.0/24,0.0.0.0/0,any,any
+Deny_icmp_Any,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_igmp_224.77.0.0,permit,igmp,170.70.18.0/24,224.77.0.0/16,any,any
+Permit_igmp_239.0.0.0,permit,igmp,170.70.18.0/24,239.0.0.0/8,any,any
+Deny_igmp_Any,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_TCP_170.70.49.150,permit,tcp,170.70.18.252/32,170.70.49.150/32,any,any
+Permit_TCP_170.70.13.30,permit,tcp,170.70.18.252/32,170.70.13.30/32,any,any
+Permit_UDP_170.70.13.30,permit,udp,170.70.18.252/32,170.70.13.30/32,any,any
+Permit_TCP_170.70.13.50,permit,tcp,170.70.18.252/32,170.70.13.50/32,any,any
+Permit_UDP_170.70.13.50,permit,udp,170.70.18.252/32,170.70.13.50/32,any,any
+Permit_TCP_170.70.13.29,permit,tcp,170.70.18.252/32,170.70.13.29/32,any,any
+Permit_UDP_170.70.13.29,permit,udp,170.70.18.252/32,170.70.13.29/32,any,any
+Permit_TCP_170.70.13.199,permit,tcp,170.70.18.252/32,170.70.13.199/32,any,any
+Permit_UDP_170.70.13.199,permit,udp,170.70.18.252/32,170.70.13.199/32,any,any
+Permit_IP_170.70.130.164,permit,ip,170.70.18.252/32,170.70.130.164/32, , 
+Deny_IP_170.70.18.252_Any,deny,ip,170.70.18.252/32,0.0.0.0/0, , 
+Permit_ESP_170.70.18.0_170.70,permit,esp,170.70.18.0/24,170.70.0.0/16,any,any
+Permit_TCP_170.70.18.0_170.70,permit,tcp,170.70.18.0/24,170.70.0.0/16,any,any
+Permit_UDP_170.70.18.0_170.70,permit,udp,170.70.18.0/24,170.70.0.0/16,any,any
+Deny_IP_170.70.18.0_170.70,deny,ip,170.70.18.0/24,170.70.0.0/16, , 
+Permit_TCP_170.70.18.0_172.16,permit,tcp,170.70.18.0/24,172.16.0.0/16,any,any
+Permit_UDP_170.70.18.0_172.16,permit,udp,170.70.18.0/24,172.16.0.0/16,any,any
+Deny_IP_170.70.18.0_172.16,deny,ip,170.70.18.0/24,172.16.0.0/16, , 
+Permit_TCP_170.70.18.0_172.17,permit,tcp,170.70.18.0/24,172.17.0.0/16,any,any
+Permit_UDP_170.70.18.0_172.17,permit,udp,170.70.18.0/24,172.17.0.0/16,any,any
+Deny_IP_170.70.18.0_172.17,deny,ip,170.70.18.0/24,172.17.0.0/16, , 
+Permit_TCP_170.70.18.0_172.18,permit,tcp,170.70.18.0/24,172.18.0.0/16,any,any
+Permit_UDP_170.70.18.0_172.18,permit,udp,170.70.18.0/24,172.18.0.0/16,any,any
+Deny_IP_170.70.18.0_172.18,deny,ip,170.70.18.0/24,172.18.0.0/16, , 
+Permit_TCP_170.70.18.0_172.24,permit,tcp,170.70.18.0/24,172.24.0.0/16,any,any
+Permit_UDP_170.70.18.0_172.24,permit,udp,170.70.18.0/24,172.24.0.0/16,any,any
+Deny_IP_170.70.18.0_172.24,deny,ip,170.70.18.0/24,172.24.0.0/16, , 
+Deny_IP_170.70.18.1,deny,ip,170.70.18.1/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.2,deny,ip,170.70.18.2/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.3,deny,ip,170.70.18.3/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.4,deny,ip,170.70.18.4/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.7,deny,ip,170.70.18.7/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.9,deny,ip,170.70.18.9/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.21,deny,ip,170.70.18.21/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.27,deny,ip,170.70.18.27/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.38,deny,ip,170.70.18.38/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.40,deny,ip,170.70.18.40/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.72,deny,ip,170.70.18.72/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.94,deny,ip,170.70.18.94/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.123,deny,ip,170.70.18.123/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.130,deny,ip,170.70.18.130/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.135,deny,ip,170.70.18.135/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.171,deny,ip,170.70.18.171/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.195,deny,ip,170.70.18.195/32,0.0.0.0/0, , 
+Deny_IP_170.70.18.200,deny,ip,170.70.18.200/32,0.0.0.0/0, , 
+Permit_TCP_170.70.18_Any,permit,tcp,170.70.18.0/24,0.0.0.0/0,any,any
+Permit_UDP_170.70.18_Any,permit,udp,170.70.18.0/24,0.0.0.0/0,any,any
+Deny_IP_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4444
+Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4996
+Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,69
+Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+Permit_UDP_0.0.0.0,permit,udp,0.0.0.0/0,255.255.255.255/32,68,67
+Permit_icmp_170.70.19.0_reply,permit,icmp,170.70.19.0/24,0.0.0.0/0,any,any
+Permit_icmp_170.70.19.0_request,permit,icmp,170.70.19.0/24,0.0.0.0/0,any,any
+Deny_icmp_Any,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_igmp_224.77.0.0,permit,igmp,170.70.19.0/24,224.77.0.0/16,any,any
+Permit_igmp_239.0.0.0,permit,igmp,170.70.19.0/24,239.0.0.0/8,any,any
+Deny_IGMP_Any,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_IP_170.70.19.173,permit,ip,170.70.19.173/32,170.70.68.157/32, , 
+Permit_IP_170.70.19.62,permit,ip,170.70.19.62/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.42,permit,ip,170.70.19.42/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.59,permit,ip,170.70.19.59/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.56,permit,ip,170.70.19.56/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.55,permit,ip,170.70.19.55/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.53,permit,ip,170.70.19.53/32,170.70.49.194/32, , 
+Permit_IP_170.70.19.62_2,permit,ip,170.70.19.62/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.42_2,permit,ip,170.70.19.42/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.59_2,permit,ip,170.70.19.59/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.56_2,permit,ip,170.70.19.56/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.55_2,permit,ip,170.70.19.55/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.53_2,permit,ip,170.70.19.53/32,170.70.13.29/32, , 
+Permit_IP_170.70.19.62_3,permit,ip,170.70.19.62/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.42_3,permit,ip,170.70.19.42/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.59_3,permit,ip,170.70.19.59/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.56_3,permit,ip,170.70.19.56/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.55_3,permit,ip,170.70.19.55/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.53_3,permit,ip,170.70.19.53/32,170.70.13.30/32, , 
+Permit_IP_170.70.19.62_30,permit,ip,170.70.19.62/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.42_30,permit,ip,170.70.19.42/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.59_30,permit,ip,170.70.19.59/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.56_30,permit,ip,170.70.19.56/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.55_30,permit,ip,170.70.19.55/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.53_10,permit,ip,170.70.19.53/32,170.70.13.50/32, , 
+Permit_IP_170.70.19.62_4,permit,ip,170.70.19.62/32,170.70.13.199/32, , 
+Permit_IP_170.70.19.42_4,permit,ip,170.70.19.42/32,170.70.13.199/32, , 
+Permit_IP_170.70.19.59:4,permit,ip,170.70.19.59/32,170.70.13.199/32, , 
+Permit_IP_170.70.19.56_4,permit,ip,170.70.19.56/32,170.70.13.199/32, , 
+Permit_IP_170.70.19.55_4,permit,ip,170.70.19.55/32,170.70.13.199/32, , 
+Permit_IP_170.70.19.53_4,permit,ip,170.70.19.53/32,170.70.13.199/32, , 
+Permit_TCP_170.70.19.62_4,permit,tcp,170.70.19.62/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.42_4,permit,tcp,170.70.19.42/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.59_4,permit,tcp,170.70.19.59/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.56_4,permit,tcp,170.70.19.56/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.55_4,permit,tcp,170.70.19.55/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.53_4,permit,tcp,170.70.19.53/32,170.70.115.76/32,any,80
+Permit_TCP_170.70.19.62_5,permit,tcp,170.70.19.62/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.42_5,permit,tcp,170.70.19.42/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.59_5,permit,tcp,170.70.19.59/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.56_5,permit,tcp,170.70.19.56/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.55_5,permit,tcp,170.70.19.55/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.53_5,permit,tcp,170.70.19.53/32,170.70.115.76/32,any,443
+Permit_TCP_170.70.19.53_50,permit,tcp,170.70.19.53/32,170.70.115.76/32,any,443
+Permit_IP_170.70.19.173_59.99_50,permit,ip,170.70.19.173/32,170.70.59.99/32, , 
+Permit_IP_170.70.19.173_58.99_50,permit,ip,170.70.19.173/32,170.70.58.99/32, , 
+Permit_ESP_170.70.19.0_170.70,permit,esp,170.70.19.0/24,170.70.0.0/16,any,any
+Permit_TCP_170.70.19.0_170.70,permit,tcp,170.70.19.0/24,170.70.0.0/16,any,any
+Permit_UDP_170.70.19.0_170.70,permit,udp,170.70.19.0/24,170.70.0.0/16,any,any
+Deny_IP_170.70.19.0_170.70,deny,ip,170.70.19.0/24,170.70.0.0/16, , 
+Permit_TCP_170.70.19.0_172.16,permit,tcp,170.70.19.0/24,172.16.0.0/16,any,any
+Permit_UDP_170.70.19.0_172.16,permit,udp,170.70.19.0/24,172.16.0.0/16,any,any
+Deny_IP_170.70.19.0_172.16,deny,ip,170.70.19.0/24,172.16.0.0/16, , 
+Permit_TCP_170.70.19.0_172.17,permit,tcp,170.70.19.0/24,172.17.0.0/16,any,any
+Permit_UDP_170.70.19.0_172.17,permit,udp,170.70.19.0/24,172.17.0.0/16,any,any
+Deny_IP_170.70.19.0_172.17,deny,ip,170.70.19.0/24,172.17.0.0/16, , 
+Permit_TCP_170.70.19.0_172.18,permit,tcp,170.70.19.0/24,172.18.0.0/16,any,any
+Permit_UDP_170.70.19.0_172.18,permit,udp,170.70.19.0/24,172.18.0.0/16,any,any
+Deny_IP_170.70.19.0_172.18,deny,ip,170.70.19.0/24,172.18.0.0/16, , 
+Permit_TCP_170.70.19.0_172.24,permit,tcp,170.70.19.0/24,172.24.0.0/16,any,any
+Permit_UDP_170.70.19.0_172.24,permit,udp,170.70.19.0/24,172.24.0.0/16,any,any
+Deny_IP_170.70.19.0_172.24,deny,ip,170.70.19.0/24,172.24.0.0/16, , 
+Deny_IP_170.70.19.1,deny,ip,170.70.19.1/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.2,deny,ip,170.70.19.2/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.3,deny,ip,170.70.19.3/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.4,deny,ip,170.70.19.4/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.5,deny,ip,170.70.19.5/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.7,deny,ip,170.70.19.7/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.8,deny,ip,170.70.19.8/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.9,deny,ip,170.70.19.9/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.26,deny,ip,170.70.19.26/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.59,deny,ip,170.70.19.59/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.75,deny,ip,170.70.19.75/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.194,deny,ip,170.70.19.194/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.201,deny,ip,170.70.19.201/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.205,deny,ip,170.70.19.205/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.252,deny,ip,170.70.19.252/32,0.0.0.0/0, , 
+Deny_IP_170.70.19.253,deny,ip,170.70.19.253/32,0.0.0.0/0, , 
+Permit_TCP_170.70.19_Any,permit,tcp,170.70.19.0/24,0.0.0.0/0,any,any
+Permit_UDP_170.70.19_Any,permit,udp,170.70.19.0/24,0.0.0.0/0,any,any
+Deny_IP_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,any
+Permit_170.70.20.0_reply,permit,icmp,170.70.20.0/24,0.0.0.0/0,any,any
+Permit_170.70.20.0_request,permit,icmp,170.70.20.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Multicast_224.77,permit,igmp,170.70.20.0/24,224.77.0.0/16,any,any
+acl_Permit_Multicast_239.0,permit,igmp,170.70.20.0/24,239.0.0.0/8,any,any
+acl_Deny_Multicast,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_ESP_170.70.0.0,permit,esp,170.70.20.0/24,170.70.0.0/16,any,any
+acl_Permit_TCP_170.70.0.0,permit,tcp,170.70.20.0/24,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0,permit,udp,170.70.20.0/24,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.20.0,deny,ip,170.70.20.0/24,170.70.0.0/16, , 
+acl_Permit_TCP_172.16.0.0,permit,tcp,170.70.20.0/24,172.16.0.0/16,any,any
+acl_Permit_UDP_172.16.0.0,permit,udp,170.70.20.0/24,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0,deny,ip,170.70.20.0/24,172.16.0.0/16, , 
+acl_Permit_TCP_172.17.0.0,permit,tcp,170.70.20.0/24,172.17.0.0/16,any,any
+acl_Permit_UDP_172.17.0.0,permit,udp,170.70.20.0/24,172.17.0.0/16,any,any
+acl_Deny_IP_172.17.0.0,deny,ip,170.70.20.0/24,172.17.0.0/16, , 
+acl_Permit_TCP_172.18.0.0,permit,tcp,170.70.20.0/24,172.18.0.0/16,any,any
+acl_Permit_UDP_172.18.0.0,permit,udp,170.70.20.0/24,172.18.0.0/16,any,any
+acl_Deny_IP_172.18.0.0,deny,ip,170.70.20.0/24,172.18.0.0/16, , 
+acl_Permit_TCP_172.24.0.0,permit,tcp,170.70.20.0/24,172.24.0.0/16,any,any
+acl_Permit_UDP_172.24.0.0,permit,udp,170.70.20.0/24,172.24.0.0/16,any,any
+acl_Deny_IP_172.24.0.0,deny,ip,170.70.20.0/24,172.24.0.0/16, , 
+acl_Deny_Internet_170.70.20.1,deny,ip,170.70.20.1/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.2,deny,ip,170.70.20.2/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.3,deny,ip,170.70.20.3/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.5,deny,ip,170.70.20.5/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.7,deny,ip,170.70.20.7/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.9,deny,ip,170.70.20.9/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.18,deny,ip,170.70.20.18/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.20,deny,ip,170.70.20.20/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.208,deny,ip,170.70.20.208/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.20.231,deny,ip,170.70.20.231/32,0.0.0.0/0, , 
+acl_Permit_TCP_170.70.20.0_ANY,permit,tcp,170.70.20.0/24,0.0.0.0/0,any,any
+acl_Permit_UDP_170.70.20.0_ANY,permit,udp,170.70.20.0/24,0.0.0.0/0,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,any
+Permit_170.70.37.0_reply,permit,icmp,170.70.37.0/24,0.0.0.0/0,any,any
+Permit_170.70.37.0_request,permit,icmp,170.70.37.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Multicast_224.77,permit,igmp,170.70.37.0/24,224.77.0.0/16,any,any
+acl_Permit_Multicast_239.0,permit,igmp,170.70.37.0/24,239.0.0.0/8,any,any
+acl_Deny__Multicast,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Esp_170.70.0.0,permit,esp,170.70.37.0/24,170.70.0.0/16,any,any
+acl_Permit_tcp_170.70.0.0,permit,tcp,170.70.37.0/24,170.70.0.0/16,any,any
+acl_Permit_udp_170.70.0.0,permit,udp,170.70.37.0/24,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0,deny,ip,170.70.37.0/24,170.70.0.0/16, , 
+acl_Permit_tcp_170.16.0.0,permit,tcp,170.70.37.0/24,170.16.0.0/16,any,any
+acl_Permit_udp_170.16.0.0,permit,udp,170.70.37.0/24,170.16.0.0/16,any,any
+acl_Deny_IP_170.16.0.0,deny,ip,170.70.37.0/24,170.16.0.0/16, , 
+acl_Permit_tcp_172.17.0.0,permit,tcp,170.70.37.0/24,172.17.0.0/16,any,any
+acl_Permit_udp_172.17.0.0,permit,udp,170.70.37.0/24,172.17.0.0/16,any,any
+acl_Deny_IP_172.17.0.0,deny,ip,170.70.37.0/24,172.17.0.0/16, , 
+acl_Permit_tcp_172.18.0.0,permit,tcp,170.70.37.0/24,172.18.0.0/16,any,any
+acl_Permit_udp_172.18.0.0,permit,udp,170.70.37.0/24,172.18.0.0/16,any,any
+acl_Deny_IP_172.18.0.0,deny,ip,170.70.37.0/24,172.18.0.0/16, , 
+acl_Permit_tcp_172.24.0.0,permit,tcp,170.70.37.0/24,172.24.0.0/16,any,any
+acl_Permit_udp_172.24.0.0,permit,udp,170.70.37.0/24,172.24.0.0/16,any,any
+acl_Deny_IP_172.24.0.0,deny,ip,170.70.37.0/24,172.24.0.0/16, , 
+acl_Deny_Internet_170.70.37.1,deny,ip,170.70.37.1/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.3,deny,ip,170.70.37.3/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.4,deny,ip,170.70.37.4/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.5,deny,ip,170.70.37.5/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.6,deny,ip,170.70.37.6/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.7,deny,ip,170.70.37.7/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.8,deny,ip,170.70.37.8/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.9,deny,ip,170.70.37.9/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.10,deny,ip,170.70.37.10/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.12,deny,ip,170.70.37.12/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.13,deny,ip,170.70.37.13/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.16,deny,ip,170.70.37.16/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.21,deny,ip,170.70.37.21/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.22,deny,ip,170.70.37.22/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.23,deny,ip,170.70.37.23/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.30,deny,ip,170.70.37.30/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.31,deny,ip,170.70.37.31/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.32,deny,ip,170.70.37.32/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.33,deny,ip,170.70.37.33/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.34,deny,ip,170.70.37.34/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.42,deny,ip,170.70.37.42/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.49,deny,ip,170.70.37.49/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.51,deny,ip,170.70.37.51/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.53,deny,ip,170.70.37.53/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.84,deny,ip,170.70.37.84/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.91,deny,ip,170.70.37.91/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.94,deny,ip,170.70.37.94/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.98,deny,ip,170.70.37.98/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.104,deny,ip,170.70.37.104/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.105,deny,ip,170.70.37.105/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.118,deny,ip,170.70.37.118/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.119,deny,ip,170.70.37.119/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.120,deny,ip,170.70.37.120/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.121,deny,ip,170.70.37.121/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.150,deny,ip,170.70.37.150/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.153,deny,ip,170.70.37.153/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.154,deny,ip,170.70.37.154/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.161,deny,ip,170.70.37.161/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.174,deny,ip,170.70.37.174/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.186,deny,ip,170.70.37.186/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.188,deny,ip,170.70.37.188/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.189,deny,ip,170.70.37.189/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.190,deny,ip,170.70.37.190/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.191,deny,ip,170.70.37.191/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.192,deny,ip,170.70.37.192/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.193,deny,ip,170.70.37.193/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.194,deny,ip,170.70.37.194/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.197,deny,ip,170.70.37.197/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.200,deny,ip,170.70.37.200/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.201,deny,ip,170.70.37.201/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.202,deny,ip,170.70.37.202/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.203,deny,ip,170.70.37.203/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.204,deny,ip,170.70.37.204/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.205,deny,ip,170.70.37.205/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.206,deny,ip,170.70.37.206/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.207,deny,ip,170.70.37.207/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.208,deny,ip,170.70.37.208/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.209,deny,ip,170.70.37.209/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.210,deny,ip,170.70.37.210/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.211,deny,ip,170.70.37.211/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.212,deny,ip,170.70.37.212/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.213,deny,ip,170.70.37.213/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.214,deny,ip,170.70.37.214/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.215,deny,ip,170.70.37.215/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.216,deny,ip,170.70.37.216/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.217,deny,ip,170.70.37.217/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.218,deny,ip,170.70.37.218/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.219,deny,ip,170.70.37.219/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.220,deny,ip,170.70.37.220/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.221,deny,ip,170.70.37.221/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.222,deny,ip,170.70.37.222/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.225,deny,ip,170.70.37.225/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.226,deny,ip,170.70.37.226/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.227,deny,ip,170.70.37.227/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.228,deny,ip,170.70.37.228/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.229,deny,ip,170.70.37.229/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.230,deny,ip,170.70.37.230/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.231,deny,ip,170.70.37.231/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.232,deny,ip,170.70.37.232/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.233,deny,ip,170.70.37.233/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.234,deny,ip,170.70.37.234/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.235,deny,ip,170.70.37.235/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.236,deny,ip,170.70.37.236/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.237,deny,ip,170.70.37.237/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.238,deny,ip,170.70.37.238/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.239,deny,ip,170.70.37.239/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.240,deny,ip,170.70.37.240/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.241,deny,ip,170.70.37.241/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.242,deny,ip,170.70.37.242/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.243,deny,ip,170.70.37.243/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.244,deny,ip,170.70.37.244/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.245,deny,ip,170.70.37.245/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.246,deny,ip,170.70.37.246/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.247,deny,ip,170.70.37.247/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.248,deny,ip,170.70.37.248/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.249,deny,ip,170.70.37.249/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.250,deny,ip,170.70.37.250/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.252,deny,ip,170.70.37.252/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.253,deny,ip,170.70.37.253/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.37.254,deny,ip,170.70.37.254/32,0.0.0.0/0, , 
+acl_Permit_tcp_Any,permit,tcp,170.70.37.0/24,0.0.0.0/0,any,any
+acl_Permit_udp_Any,permit,udp,170.70.37.0/24,0.0.0.0/0,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UPD_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UPD_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+Permit_170.70.38.0_reply,permit,icmp,170.70.38.0/24,0.0.0.0/0,any,any
+Permit_170.70.38.0_request,permit,icmp,170.70.38.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Multicast_224.77,permit,igmp,170.70.38.0/24,224.77.0.0/16,any,any
+acl_Permit_Multicast_239.0,permit,igmp,170.70.38.0/24,239.0.0.0/8,any,any
+acl_Deny__Multicast,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_38.112-49.150,permit,tcp,170.70.38.112/32,170.70.49.150/32,any,any
+acl_Permit_TCP_38.193-49.150,permit,tcp,170.70.38.193/32,170.70.49.150/32,any,any
+acl_Permit_TCP_38.112-13.30,permit,tcp,170.70.38.112/32,170.70.13.30/32,any,any
+acl_Permit_UDP_38.112-13.30,permit,udp,170.70.38.112/32,170.70.13.30/32,any,any
+acl_Permit_TCP_38.112-13.50,permit,tcp,170.70.38.112/32,170.70.13.50/32,any,any
+acl_Permit_UDP_38.112-13.50,permit,udp,170.70.38.112/32,170.70.13.50/32,any,any
+acl_Permit_TCP_38.112-13.29,permit,tcp,170.70.38.112/32,170.70.13.29/32,any,any
+acl_Permit_UDP_38.112-13.29,permit,udp,170.70.38.112/32,170.70.13.29/32,any,any
+acl_Permit_TCP_38.112-13.199,permit,tcp,170.70.38.112/32,170.70.13.199/32,any,any
+acl_Permit_UDP_38.112-13.199,permit,udp,170.70.38.112/32,170.70.13.199/32,any,any
+acl_Permit_TCP_38.193-13.30,permit,tcp,170.70.38.193/32,170.70.13.30/32,any,any
+acl_Permit_UDP_38.193-13.30,permit,udp,170.70.38.193/32,170.70.13.30/32,any,any
+acl_Permit_TCP_38.193-13.50,permit,tcp,170.70.38.193/32,170.70.13.50/32,any,any
+acl_Permit_UDP_38.193-13.50,permit,udp,170.70.38.193/32,170.70.13.50/32,any,any
+acl_Permit_TCP_38.193-13.29,permit,tcp,170.70.38.193/32,170.70.13.29/32,any,any
+acl_Permit_UDP_38.193-13.29,permit,udp,170.70.38.193/32,170.70.13.29/32,any,any
+acl_Permit_TCP_38.193-13.199,permit,tcp,170.70.38.193/32,170.70.13.199/32,any,any
+acl_Permit_UDP_38.193-13.199,permit,udp,170.70.38.193/32,170.70.13.199/32,any,any
+acl_Permit_IP_170.70.38.112_164,permit,ip,170.70.38.112/32,170.70.130.164/32, , 
+acl_Permit_IP_170.70.38.117_164,permit,ip,170.70.38.117/32,170.70.130.164/32, , 
+acl_Permit_IP_170.70.38.144_164,permit,ip,170.70.38.144/32,170.70.130.164/32, , 
+acl_Permit_IP_170.70.38.193_164,permit,ip,170.70.38.193/32,170.70.130.164/32, , 
+acl_Permit_IP_170.70.38.201_164,permit,ip,170.70.38.201/32,170.70.130.164/32, , 
+acl_Permit_IP_170.70.38.112_30,permit,ip,170.70.38.112/32,170.70.13.30/32, , 
+acl_Permit_IP_170.70.38.112_50,permit,ip,170.70.38.112/32,170.70.13.50/32, , 
+acl_Permit_IP_170.70.38.117_30,permit,ip,170.70.38.117/32,170.70.13.30/32, , 
+acl_Permit_IP_170.70.38.117_50,permit,ip,170.70.38.117/32,170.70.13.50/32, , 
+acl_Permit_IP_170.70.38.144_30,permit,ip,170.70.38.144/32,170.70.13.30/32, , 
+acl_Permit_IP_170.70.38.144_50,permit,ip,170.70.38.144/32,170.70.13.50/32, , 
+acl_Permit_IP_170.70.38.193_30,permit,ip,170.70.38.193/32,170.70.13.30/32, , 
+acl_Permit_IP_170.70.38.193_50,permit,ip,170.70.38.193/32,170.70.13.50/32, , 
+acl_Permit_IP_170.70.38.201_30,permit,ip,170.70.38.201/32,170.70.13.30/32, , 
+acl_Permit_IP_170.70.38.201_50,permit,ip,170.70.38.201/32,170.70.13.50/32, , 
+acl_Deny_IP_170.70.38.117_ANY,deny,ip,170.70.38.117/32,0.0.0.0/0, , 
+acl_Deny_IP_170.70.38.193_ANY,deny,ip,170.70.38.193/32,0.0.0.0/0, , 
+acl_Deny_IP_170.70.38.112_ANY,deny,ip,170.70.38.112/32,0.0.0.0/0, , 
+acl_Deny_IP_170.70.38.201_ANY,deny,ip,170.70.38.201/32,0.0.0.0/0, , 
+acl_Deny_IP_170.70.38.144_ANY,deny,ip,170.70.38.144/32,0.0.0.0/0, , 
+acl_Permit_IP_170.70.38.109,permit,ip,170.70.38.109/32,170.70.0.0/16, , 
+acl_Deny_IP_170.70.38.109_ANY,deny,ip,170.70.38.109/32,0.0.0.0/0, , 
+acl_Permit_Esp_170.70.0.0,permit,esp,170.70.38.0/24,170.70.0.0/16,any,any
+acl_Permit_tcp_170.70.0.0,permit,tcp,170.70.38.0/24,170.70.0.0/16,any,any
+acl_Permit_udp_170.70.0.0,permit,udp,170.70.38.0/24,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0,deny,ip,170.70.38.0/24,170.70.0.0/16, , 
+acl_Permit_tcp_172.16.0.0,permit,tcp,170.70.38.0/24,172.16.0.0/16,any,any
+acl_Permit_udp_172.16.0.0,permit,udp,170.70.38.0/24,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0,deny,ip,170.70.38.0/24,172.16.0.0/16, , 
+acl_Permit_tcp_172.17.0.0,permit,tcp,170.70.38.0/24,172.17.0.0/16,any,any
+acl_Permit_udp_172.17.0.0,permit,udp,170.70.38.0/24,172.17.0.0/16,any,any
+acl_Deny_IP_172.17.0.0,deny,ip,170.70.38.0/24,172.17.0.0/16, , 
+acl_Permit_tcp_172.18.0.0,permit,tcp,170.70.38.0/24,172.18.0.0/16,any,any
+acl_Permit_udp_172.18.0.0,permit,udp,170.70.38.0/24,172.18.0.0/16,any,any
+acl_Deny_IP_172.18.0.0,deny,ip,170.70.38.0/24,172.18.0.0/16, , 
+acl_Permit_tcp_172.24.0.0,permit,tcp,170.70.38.0/24,172.24.0.0/16,any,any
+acl_Permit_udp_172.24.0.0,permit,udp,170.70.38.0/24,172.24.0.0/16,any,any
+acl_Deny_IP_172.24.0.0,deny,ip,170.70.38.0/24,172.24.0.0/16, , 
+acl_Deny_Internet_170.70.38.1,deny,ip,170.70.38.1/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.2,deny,ip,170.70.38.2/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.3,deny,ip,170.70.38.3/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.5,deny,ip,170.70.38.5/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.6,deny,ip,170.70.38.6/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.9,deny,ip,170.70.38.9/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.94,deny,ip,170.70.38.94/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.109,deny,ip,170.70.38.109/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.117,deny,ip,170.70.38.117/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.121,deny,ip,170.70.38.121/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.125,deny,ip,170.70.38.125/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.130,deny,ip,170.70.38.130/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.165,deny,ip,170.70.38.165/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.198,deny,ip,170.70.38.198/32,0.0.0.0/0, , 
+acl_Deny_Internet_170.70.38.209,deny,ip,170.70.38.209/32,0.0.0.0/0, , 
+acl_Permit_tcp_Any,permit,tcp,170.70.38.0/24,0.0.0.0/0,any,any
+acl_Permit_udp_Any,permit,udp,170.70.38.0/24,0.0.0.0/0,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_Pemit_ICMP_reply,permit,icmp,170.70.160.64/27,0.0.0.0/0,any,any
+acl_Pemit_ICMP_request,permit,icmp,170.70.160.64/27,0.0.0.0/0,any,any
+acl_Permit_TCP_170.70.0.0,permit,tcp,170.70.160.64/27,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0,permit,udp,170.70.160.64/27,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0,deny,ip,170.70.160.64/27,170.70.0.0/16, , 
+acl_Deny_IP_172.16.0.0,deny,ip,170.70.160.64/27,172.16.0.0/16, , 
+acl_Deny_IP_172.17.0.0,deny,ip,170.70.160.64/27,172.17.0.0/16, , 
+acl_Deny_IP_172.18.0.0,deny,ip,170.70.160.64/27,172.18.0.0/16, , 
+acl_Deny_IP_172.24.0.0,deny,ip,170.70.160.64/27,172.24.0.0/16, , 
+acl_Permit_tcp_Any,permit,tcp,170.70.160.64/27,0.0.0.0/0,any,any
+acl_Permit_udp_Any,permit,udp,170.70.160.64/27,0.0.0.0/0,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4444
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,any
+Permit_170.70.32.128_reply,permit,icmp,170.70.32.128/26,0.0.0.0/0,any,any
+Permit_170.70.32.128_request,permit,icmp,170.70.32.128/26,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Multicast_224.77,permit,igmp,170.70.32.128/26,224.77.0.0/16,any,any
+acl_Permit_Multicast_239.0,permit,igmp,170.70.32.128/26,239.0.0.0/8,any,any
+acl_Deny__Multicast,deny,igmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_Esp_170.70.0.0,permit,esp,170.70.32.128/26,170.70.0.0/16,any,any
+acl_Permit_tcp_170.70.0.0,permit,tcp,170.70.32.128/26,170.70.0.0/16,any,any
+acl_Permit_udp_170.70.0.0,permit,udp,170.70.32.128/26,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0,deny,ip,170.70.32.128/26,170.70.0.0/16, , 
+acl_Permit_tcp_172.16.0.0,permit,tcp,170.70.32.128/26,172.16.0.0/16,any,any
+acl_Permit_udp_172.16.0.0,permit,udp,170.70.32.128/26,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0,deny,ip,170.70.32.128/24,172.16.0.0/16, , 
+acl_Permit_tcp_172.17.0.0,permit,tcp,170.70.32.128/26,172.17.0.0/16,any,any
+acl_Permit_udp_172.17.0.0,permit,udp,170.70.32.128/26,172.17.0.0/16,any,any
+acl_Deny_IP_172.17.0.0,deny,ip,170.70.32.128/24,172.17.0.0/16, , 
+acl_Permit_tcp_172.18.0.0,permit,tcp,170.70.32.128/26,172.18.0.0/16,any,any
+acl_Permit_udp_172.18.0.0,permit,udp,170.70.32.128/26,172.18.0.0/16,any,any
+acl_Deny_IP_172.18.0.0,deny,ip,170.70.32.128/26,172.18.0.0/16, , 
+acl_Permit_tcp_172.24.0.0,permit,tcp,170.70.32.128/26,172.24.0.0/16,any,any
+acl_Permit_udp_172.24.0.0,permit,udp,170.70.32.128/26,172.24.0.0/16,any,any
+acl_Deny_IP_172.24.0.0,deny,ip,170.70.32.128/26,172.24.0.0/16, , 
+acl_Permit_tcp_Any,permit,tcp,170.70.32.128/26,0.0.0.0/0,any,any
+acl_Permit_udp_Any,permit,udp,170.70.32.128/26,0.0.0.0/0,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4444
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+Permit_170.70.18.0_reply,permit,icmp,170.70.18.0/24,0.0.0.0/0,any,any
+Permit_170.70.18.0_request,permit,icmp,170.70.18.0/24,0.0.0.0/0,any,any
+Permit_172.17.175.0_reply,permit,icmp,172.17.175.0/24,0.0.0.0/0,any,any
+Permit_172.17.175.0_request,permit,icmp,172.17.175.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_172.17.175.10_1,permit,tcp,172.17.175.10/32,170.70.13.153/32,any,any
+acl_Permit_TCP_172.17.175.10_2,permit,tcp,172.17.175.10/32,172.17.110.137/32,any,any
+acl_Permit_TCP_172.17.175.10_3,permit,tcp,172.17.175.10/32,170.70.13.247/32,any,any
+acl_Permit_TCP_172.17.175.11_1,permit,tcp,172.17.175.11/32,170.70.13.153/32,any,any
+acl_Permit_TCP_172.17.175.11_2,permit,tcp,172.17.175.11/32,172.17.110.137/32,any,any
+acl_Permit_TCP_172.17.175.11_3,permit,tcp,172.17.175.11/32,170.70.13.247/32,any,any
+Permit_TCP_SMTP_1,permit,tcp,172.17.175.10/32,170.70.13.190/32,any,25
+Permit_TCP_SMTP_2,permit,tcp,172.17.175.11/32,170.70.13.190/32,any,25
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UPD_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UPD_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UPD_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_UPS_5M18_reply_1,permit,icmp,172.17.62.129/25,0.0.0.0/0,any,any
+acl_UPS_5M18_request_1,permit,icmp,172.17.62.129/25,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_TCP_BMSCADA5,permit,tcp,172.17.62.129/25,170.70.13.153/32,any,any
+Permit_UDP_BMSCADA5,permit,udp,172.17.62.129/25,170.70.13.153/32,any,any
+Permit_TCP_BMSCADA6,permit,tcp,172.17.62.129/25,170.70.13.247/32,any,any
+Permit_UDP_BMSCADA6,permit,udp,172.17.62.129/25,170.70.13.247/32,any,any
+Permit_UDP_SV_INMUEBLES,permit,udp,172.17.62.129/25,170.70.74.83/32,any,any
+Permit_TCP_BMTRACERC,permit,tcp,172.17.62.129/25,170.70.49.93/32,any,any
+Permit_UDP_BMTRACERC,permit,udp,172.17.62.129/25,170.70.49.93/32,any,any
+Permit_UDP_HPOV4_MON,permit,udp,172.17.62.129/25,170.70.65.244/32,any,any
+Permit_UDP_NTP1,permit,udp,172.17.62.129/25,170.70.49.40/32,any,123
+Permit_UDP_NTP2,permit,udp,172.17.62.129/25,170.70.49.157/32,any,123
+Permit_TCP_DNS,permit,tcp,172.17.62.129/25,170.70.13.30/32,any,53
+Permit_UDP_DNS,permit,udp,172.17.62.129/25,170.70.13.30/32,any,53
+Permit_TCP_HTTP,permit,tcp,172.17.62.129/25,0.0.0.0/0,80,any
+Permit_TCP_HTTPS,permit,tcp,172.17.62.129/25,0.0.0.0/0,443,any
+Permit_TCP_SMTP,permit,tcp,172.17.62.129/25,170.70.13.190/32,any,25
+Permit_TCP_ETB_1,permit,tcp,172.17.62.129/25,170.70.99.116/32,any,any
+Permit_UDP_ETB_1,permit,udp,172.17.62.129/25,170.70.99.116/32,any,any
+Permit_TCP_ETB_2,permit,tcp,172.17.62.129/25,170.70.1.71/32,any,any
+Permit_UDP_ETB_2,permit,udp,172.17.62.129/25,170.70.1.71/32,any,any
+Permit_TCP_ETB_3,permit,tcp,172.17.62.129/25,170.70.1.84/32,any,any
+Permit_UDP_ETB_3,permit,udp,172.17.62.129/25,170.70.1.84/32,any,any
+Permit_TCP_ETB_4,permit,tcp,172.17.62.129/25,170.70.99.81/32,any,any
+Permit_UDP_ETB_4,permit,udp,172.17.62.129/25,170.70.99.81/32,any,any
+Permit_TCP_ETB_5,permit,tcp,172.17.62.129/25,170.70.1.60/32,any,any
+Permit_UDP_ETB_5,permit,udp,172.17.62.129/25,170.70.1.60/32,any,any
+Permit_TCP_ETB_6,permit,tcp,172.17.62.129/25,170.70.1.72/32,any,any
+Permit_UDP_ETB_6,permit,udp,172.17.62.129/25,170.70.1.72/32,any,any
+Permit_TCP_ETB_7,permit,tcp,172.17.62.129/25,170.70.99.30/32,any,any
+Permit_UDP_ETB_7,permit,udp,172.17.62.129/25,170.70.99.30/32,any,any
+Permit_TCP_ETB_8,permit,tcp,172.17.62.129/25,170.70.41.245/32,any,any
+Permit_UDP_ETB_8,permit,udp,172.17.62.129/25,170.70.41.245/32,any,any
+Permit_TCP_ETB_9,permit,tcp,172.17.62.129/25,170.70.99.54/32,any,any
+Permit_UDP_ETB_9,permit,udp,172.17.62.129/25,170.70.99.54/32,any,any
+Permit_TCP_ETB_10,permit,tcp,172.17.62.129/25,170.70.1.21/32,any,any
+Permit_UDP_ETB_10,permit,udp,172.17.62.129/25,170.70.1.21/32,any,any
+Permit_TCP_ETB_11,permit,tcp,172.17.62.129/25,170.70.28.108/32,any,any
+Permit_UDP_ETB_11,permit,udp,172.17.62.129/25,170.70.28.108/32,any,any
+Permit_TCP_ETB_12,permit,tcp,172.17.62.129/25,170.70.1.28/32,any,any
+Permit_UDP_ETB_12,permit,udp,172.17.62.129/25,170.70.1.28/32,any,any
+Permit_TCP_ETB_13,permit,tcp,172.17.62.129/25,170.70.68.57/32,any,any
+Permit_UDP_ETB_13,permit,udp,172.17.62.129/25,170.70.68.57/32,any,any
+Permit_TCP_SIST_ELECT,permit,tcp,172.17.62.129/25,172.17.110.0/24,any,any
+Permit_UDP_SIST_ELECT,permit,udp,172.17.62.129/25,172.17.110.0/24,any,any
+acl_DENY_TCP_ALL,deny,tcp,172.17.62.129/25,0.0.0.0/0,any,any
+acl_DENY_UDP_ALL,deny,udp,172.17.62.129/25,0.0.0.0/0,any,any
+acl_DENY_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_Pemit_ICMP_reply,permit,icmp,172.17.15.96/28,0.0.0.0/0,any,any
+acl_Pemit_ICMP_request,permit,icmp,172.17.15.96/28,0.0.0.0/0,any,any
+acl_Pemit_ICMP_reply_2,permit,icmp,170.70.0.0/16,172.17.15.96/28,any,any
+acl_Pemit_ICMP_request_2,permit,icmp,170.70.0.0/16,172.17.15.96/28,any,any
+acl_Permit_DNS_1,permit,ip,172.17.15.96/28,170.70.13.30/32, , 
+acl_Permit_DNS_2,permit,ip,172.17.15.96/28,170.70.13.50/32, , 
+acl_Permit_tcp_Any,permit,tcp,172.17.15.96/28,172.17.15.96/28,any,any
+acl_Permit_udp_Any,permit,udp,172.17.15.96/28,172.17.15.96/28,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Permit_TCP_170.70.13.29,permit,tcp,170.70.4.10/32,170.70.13.29/32,any,any
+acl_Permit_UDP_170.70.13.29,permit,udp,170.70.4.10/32,170.70.13.29/32,any,any
+acl_Permit_TCP_170.70.13.50,permit,tcp,170.70.4.10/32,170.70.13.50/32,any,any
+acl_Permit_UDP_170.70.13.50,permit,udp,170.70.4.10/32,170.70.13.50/32,any,any
+acl_Deny_IP_170.70.0.0,deny,ip,170.70.4.10/32,170.70.0.0/16, , 
+acl_Permit_UDP_170.70.13.50_1,permit,ip,170.70.4.10/32,0.0.0.0/0, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_icmp__170.70.1.0,permit,icmp,170.70.26.160/28,170.70.1.0/24,any,any
+acl_icmp__170.70.3.62,permit,icmp,170.70.26.160/28,170.70.3.62/32,any,any
+acl_icmp__170.70.4.166,permit,icmp,170.70.26.160/28,170.70.4.166/32,any,any
+acl_icmp__170.70.26.74,permit,icmp,170.70.26.160/28,170.70.26.74/32,any,any
+acl_icmp__170.70.65.245,permit,icmp,170.70.26.160/28,170.70.65.245/32,any,any
+acl_icmp__deny_170.70.26.16,deny,icmp,170.70.26.160/28,0.0.0.0/0,any,any
+acl_icmp__permit_any,permit,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_IP_170.70.4.166,permit,ip,170.70.26.161/32,170.70.4.166/32, , 
+acl_Permit_IP_170.70.26.74,permit,ip,170.70.26.161/32,170.70.26.74/32, , 
+acl_Permit_IP_170.70.65.243,permit,ip,170.70.4.195/32,170.70.65.243/32, , 
+acl_Permit_IP_170.70.4.196,permit,ip,170.70.4.196/32,170.70.65.243/32, , 
+acl_Permit_udp_170.70.4.195,permit,udp,170.70.4.195/32,170.70.65.245/32,any,any
+acl_Permit_udp_170.70.4.196,permit,udp,170.70.4.196/32,170.70.65.245/32,any,any
+acl_Permit_tcp_170.70.4.196,permit,tcp,170.70.4.196/32,170.70.4.179/32,any,22
+acl_Permit_tcp_170.70.4.160,permit,tcp,170.70.4.160/27,170.70.130.136/32,any,25
+acl_Deny_ip_170.70.26.160,deny,ip,170.70.26.160/28,0.0.0.0/0, , 
+acl_Permit_ip_any,permit,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_VozCisco_CCTV_reply_1,permit,icmp,170.70.26.0/24,0.0.0.0/0,any,any
+acl_VozCisco_CCTV_request_1,permit,icmp,170.70.26.0/24,0.0.0.0/0,any,any
+acl_Deny_IP_172.16.0.0_1,permit,ip,172.19.3.6/32,170.70.26.0/24, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_SubSwitches_reply_1,permit,icmp,170.70.0.0/16,172.17.131.0/24,any,any
+acl_SubSwitches_request_1,permit,icmp,170.70.0.0/16,172.17.131.0/24,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_170.70.66.250_1,permit,tcp,170.70.66.0/24,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_2,permit,tcp,170.70.1.4/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_202,permit,tcp,170.70.1.252/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_4,permit,tcp,170.70.1.20/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_5,permit,tcp,170.70.1.39/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_6,permit,tcp,170.70.1.54/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_7,permit,tcp,170.70.1.48/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_101,permit,tcp,170.70.1.130/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_16,permit,tcp,170.70.1.171/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_18,permit,tcp,170.70.1.203/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_20,permit,tcp,170.70.1.215/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_201,permit,tcp,170.70.1.254/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_31,permit,tcp,170.70.41.70/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_35,permit,tcp,170.70.41.229/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_36,permit,tcp,170.70.41.107/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_37,permit,tcp,170.70.41.116/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_38,permit,tcp,170.70.41.99/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_381,permit,tcp,170.70.41.190/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_23,permit,tcp,170.70.16.21/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_24,permit,tcp,170.70.16.23/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_25,permit,tcp,170.70.16.214/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_26,permit,tcp,170.70.29.50/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_27,permit,tcp,170.70.40.30/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_28,permit,tcp,170.70.40.31/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_29,permit,tcp,170.70.40.32/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_30,permit,tcp,170.70.40.33/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_40,permit,tcp,170.70.65.241/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_41,permit,tcp,170.70.65.242/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_42,permit,tcp,170.70.65.243/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_44,permit,tcp,170.70.65.245/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_46,permit,tcp,170.70.65.247/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_48,permit,tcp,170.70.68.251/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_50,permit,tcp,170.70.1.154/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_9,permit,tcp,170.70.1.93/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_13,permit,tcp,170.70.1.156/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_33,permit,tcp,170.70.41.182/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_54,permit,tcp,170.70.99.169/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_55,permit,tcp,170.70.99.224/28,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_56,permit,tcp,170.70.16.0/27,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_49,permit,tcp,170.70.79.55/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_51,permit,tcp,172.17.68.10/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_57,permit,tcp,170.70.21.245/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_12,permit,tcp,170.70.1.115/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_63,permit,tcp,172.17.44.18/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_64,permit,tcp,172.17.44.13/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_65,permit,tcp,172.17.44.21/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_165,permit,tcp,172.17.31.28/32,172.17.131.0/24,any,22
+acl_Permit_ALL_170.70.130.130,permit,tcp,170.70.130.130/32,172.17.131.0/24,any,any
+acl_Permit_TCP_170.70.41.201,permit,tcp,170.70.41.201/32,172.17.131.0/24,any,22
+acl_Permit_TCP_172.17.131.0_200,permit,tcp,170.70.41.250/32,172.17.131.37/32,any,80
+acl_Permit_UDP_172.17.131.0_66,permit,udp,170.70.65.247/32,172.17.131.0/24,514,any
+acl_Permit_UDP_172.17.131.0_661,permit,udp,170.70.65.242/32,172.17.131.0/24,514,any
+acl_Permit_UDP_172.17.131.0_67,permit,udp,170.70.65.241/32,172.17.131.0/24,514,any
+acl_Permit_UDP_172.17.131.0_671,permit,udp,170.70.98.10/32,172.17.131.0/24,514,any
+acl_Permit_TCP_172.17.131.0_68,permit,tcp,170.70.68.10/32,172.17.131.0/24,514,any
+acl_Permit_TCP_172.17.131.0_683,permit,tcp,170.70.1.94/32,172.17.131.0/24,22,any
+acl_Permit_TCP_172.17.131.0_682,permit,tcp,170.70.65.242/32,172.17.131.0/24,22,any
+acl_Permit_TCP_172.17.131.0_283,permit,tcp,170.70.65.247/32,172.17.131.0/24,22,any
+acl_Permit_TCP_172.17.49.200,permit,tcp,172.17.49.200/32,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.49.200_1,permit,tcp,172.17.49.200/32,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_171,permit,tcp,170.70.65.247/32,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_193,permit,tcp,170.70.65.247/32,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_71,permit,tcp,170.70.65.244/32,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_93,permit,tcp,170.70.65.244/32,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_70,permit,tcp,170.70.65.245/32,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_92,permit,tcp,170.70.65.245/32,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_711,permit,tcp,170.70.65.241/32,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_931,permit,tcp,170.70.65.241/32,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_72,permit,tcp,170.70.1.0/24,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_94,permit,tcp,170.70.1.0/24,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_73,permit,tcp,170.70.41.0/24,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_95,permit,tcp,170.70.41.0/24,172.17.131.0/24,any,162
+acl_Permit_TCP_172.17.131.0_75,permit,tcp,170.70.99.0/24,172.17.131.0/24,any,161
+acl_Permit_TCP_172.17.131.0_97,permit,tcp,170.70.99.0/24,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.49.200,permit,udp,172.17.49.200/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.49.200_1,permit,udp,172.17.49.200/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_8,permit,udp,170.70.65.247/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_42,permit,udp,170.70.65.247/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_10,permit,udp,170.70.65.244/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_44,permit,udp,170.70.65.244/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_9,permit,udp,170.70.65.245/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_43,permit,udp,170.70.65.245/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_12,permit,udp,170.70.65.241/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_46,permit,udp,170.70.65.241/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_13,permit,udp,170.70.1.0/24,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_47,permit,udp,170.70.1.0/24,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_14,permit,udp,170.70.41.0/24,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_48,permit,udp,170.70.41.0/24,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_15,permit,udp,170.70.99.0/24,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_49,permit,udp,170.70.99.0/24,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_115,permit,udp,172.17.31.28/32,172.17.131.0/24,any,161
+acl_Permit_UDP_172.17.131.0_149,permit,udp,172.17.31.28/32,172.17.131.0/24,any,162
+acl_Permit_UDP_172.17.131.0_21,permit,udp,170.70.49.40/32,172.17.131.0/24,123,any
+acl_Permit_UDP_172.17.131.0_22,permit,udp,170.70.49.157/32,172.17.131.0/24,123,any
+acl_Permit_TCP_172.17.131.0_181,permit,tcp,170.70.65.36/32,172.17.131.34/32,49,any
+acl_Permit_TCP_172.17.131.0_81,permit,tcp,170.70.48.1/32,172.17.131.0/24,49,any
+acl_Permit_TCP_172.17.131.0_82,permit,tcp,170.70.48.71/32,172.17.131.0/24,49,any
+acl_Permit_UDP_172.17.131.0_23,permit,udp,170.70.48.1/32,172.17.131.0/24,49,any
+acl_Permit_UDP_172.17.131.0_24,permit,udp,170.70.48.71/32,172.17.131.0/24,49,any
+acl_Permit_TCP_172.17.131.0_185,permit,tcp,170.70.65.36/32,172.17.131.34/32,1812,any
+acl_Permit_TCP_172.17.131.0_186,permit,tcp,170.70.65.36/32,172.17.131.34/32,1813,any
+acl_Permit_UDP_172.17.131.0_185,permit,udp,170.70.65.36/32,172.17.131.34/32,1812,any
+acl_Permit_UDP_172.17.131.0_186,permit,udp,170.70.65.36/32,172.17.131.34/32,1813,any
+acl_Permit_TCP_172.17.131.0_83,permit,tcp,170.70.48.1/32,172.17.131.0/24,1812,any
+acl_Permit_TCP_172.17.131.0_103,permit,tcp,170.70.48.1/32,172.17.131.0/24,1813,any
+acl_Permit_UDP_172.17.131.0_25,permit,udp,170.70.48.1/32,172.17.131.0/24,1812,any
+acl_Permit_UDP_172.17.131.0_55,permit,udp,170.70.48.1/32,172.17.131.0/24,1813,any
+acl_Permit_TCP_172.17.131.0_84,permit,tcp,170.70.48.71/32,172.17.131.0/24,1812,any
+acl_Permit_TCP_172.17.131.0_104,permit,tcp,170.70.48.71/32,172.17.131.0/24,1813,any
+acl_Permit_UDP_172.17.131.0_56_1,permit,udp,170.70.48.71/32,172.17.131.0/24,1812,any
+acl_Permit_UDP_172.17.131.0_56,permit,udp,170.70.48.71/32,172.17.131.0/24,1813,any
+acl_Permit_TCP_172.17.131.0_85,permit,tcp,172.17.176.66/32,172.17.131.0/24,1812,any
+acl_Permit_TCP_172.17.131.0_105,permit,tcp,172.17.176.66/32,172.17.131.0/24,1813,any
+acl_Permit_UDP_172.17.131.0_57_1,permit,udp,172.17.176.66/32,172.17.131.0/24,1812,any
+acl_Permit_UDP_172.17.131.0_57,permit,udp,172.17.176.66/32,172.17.131.0/24,1813,any
+acl_Permit_TCP_172.17.131.0_86,permit,tcp,172.17.176.2/32,172.17.131.0/24,1812,any
+acl_Permit_TCP_172.17.131.0_106,permit,tcp,172.17.176.2/32,172.17.131.0/24,1813,any
+acl_Permit_UDP_172.17.131.0_28,permit,udp,172.17.176.2/32,172.17.131.0/24,1812,any
+acl_Permit_UDP_172.17.131.0_58,permit,udp,172.17.176.2/32,172.17.131.0/24,1813,any
+acl_Permit_TCP_172.17.131.0_87,permit,tcp,172.17.176.66/32,172.17.131.0/24,49,any
+acl_Permit_UDP_172.17.131.0_29,permit,udp,172.17.176.66/32,172.17.131.0/24,49,any
+acl_Permit_TCP_172.17.131.0_88,permit,tcp,172.17.176.2/32,172.17.131.0/24,49,any
+acl_Permit_UDP_172.17.131.0_30,permit,udp,172.17.176.2/32,172.17.131.0/24,49,any
+acl_Permit_UDP_172.17.131.0_31,permit,udp,172.17.176.66/32,172.17.131.0/24,any,1700
+acl_Permit_UDP_172.17.131.0_32,permit,udp,172.17.176.66/32,172.17.131.0/24,any,3799
+acl_Permit_UDP_172.17.131.0_33,permit,udp,172.17.176.2/32,172.17.131.0/24,any,1700
+acl_Permit_UDP_172.17.131.0_34,permit,udp,172.17.176.2/32,172.17.131.0/24,any,3799
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_icmp_reply_1,permit,icmp,172.17.139.0/24,0.0.0.0/0,any,any
+acl_icmp_request_1,permit,icmp,172.17.139.0/24,0.0.0.0/0,any,any
+acl_ip_170.70.65.177,permit,ip,172.17.139.0/24,170.70.65.177/32, , 
+acl_ip_170.70.65.187,permit,ip,172.17.139.0/24,170.70.65.187/32, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UPD_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UPD_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UPD_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,deny,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_icmp_reply_1,permit,icmp,172.17.66.32/28,0.0.0.0/0,any,any
+acl_icmp_request_1,permit,icmp,172.17.66.32/28,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_tcp_172.17.66.32,permit,tcp,172.17.66.32/28,170.70.13.79/32,any,any
+acl_udp_172.17.66.32,permit,udp,172.17.66.32/28,170.70.13.79/32,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_icmp_reply_1,permit,icmp,172.17.149.0/25,170.70.1.4/32,any,any
+acl_icmp_request_1,permit,icmp,172.17.149.0/25,170.70.1.4/32,any,any
+acl_icmp_reply_2,permit,icmp,172.17.149.0/25,170.70.1.154/32,any,any
+acl_icmp_request_2,permit,icmp,172.17.149.0/25,170.70.1.154/32,any,any
+acl_icmp_reply_3,permit,icmp,172.17.149.0/25,170.70.49.27/32,any,any
+acl_icmp_request_3,permit,icmp,172.17.149.0/25,170.70.49.27/32,any,any
+acl_icmp_reply_4,permit,icmp,172.17.149.0/25,170.70.49.19/32,any,any
+acl_icmp_request_4,permit,icmp,172.17.149.0/25,170.70.49.19/32,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_TCP_170.70.49.19,permit,tcp,172.17.149.62/32,170.70.49.19/32,any,any
+acl_TCP_170.70.49.27,permit,tcp,172.17.149.62/32,170.70.49.27/32,any,any
+acl_TCP_170.70.26.10,permit,tcp,172.17.149.62/32,170.70.26.10/32,any,any
+acl_TCP_170.70.26.11,permit,tcp,172.17.149.62/32,170.70.26.11/32,any,any
+acl_TCP_172.17.158.2,permit,tcp,172.17.149.62/32,172.17.158.2/32,any,any
+acl_TCP_172.17.158.3,permit,tcp,172.17.149.62/32,172.17.158.3/32,any,any
+acl_TCP_172.17.158.4,permit,tcp,172.17.149.62/32,172.17.158.4/32,any,any
+acl_TCP_172.17.158.5,permit,tcp,172.17.149.62/32,172.17.158.5/32,any,any
+acl_UDP_170.70.49.19,permit,udp,172.17.149.62/32,170.70.49.19/32,any,any
+acl_UDP_170.70.49.27,permit,udp,172.17.149.62/32,170.70.49.27/32,any,any
+acl_UDP_170.70.26.10,permit,udp,172.17.149.62/32,170.70.26.10/32,any,any
+acl_UDP_170.70.26.11,permit,udp,172.17.149.62/32,170.70.26.11/32,any,any
+acl_TCP_170.70.49.19_1,permit,tcp,172.17.149.126/32,170.70.49.19/32,any,any
+acl_TCP_170.70.49.27_1,permit,tcp,172.17.149.126/32,170.70.49.27/32,any,any
+acl_TCP_170.70.26.10_1,permit,tcp,172.17.149.126/32,170.70.26.10/32,any,any
+acl_TCP_170.70.26.11_1,permit,tcp,172.17.149.126/32,170.70.26.11/32,any,any
+acl_UDP_170.70.49.19_1,permit,udp,172.17.149.126/32,170.70.49.19/32,any,any
+acl_UDP_170.70.49.27_1,permit,udp,172.17.149.126/32,170.70.49.27/32,any,any
+acl_UDP_170.70.26.10_1,permit,udp,172.17.149.126/32,170.70.26.10/32,any,any
+acl_UDP_170.70.26.11_1,permit,udp,172.17.149.126/32,170.70.26.11/32,any,any
+acl_TCP_170.70.25.105_1,permit,tcp,172.17.149.126/32,170.70.25.105/32,any,any
+acl_TCP_170.70.26.227_1,permit,tcp,172.17.149.126/32,170.70.26.227/32,any,any
+acl_TCP_172.17.149.253_2,permit,tcp,172.17.149.62/32,172.17.149.253/32,any,any
+acl_UDP_172.17.149.253_2,permit,udp,172.17.149.62/32,172.17.149.253/32,any,any
+acl_UDP_123,permit,udp,172.17.149.0/25,170.70.49.40/32,any,any
+acl_UDP_123_1,permit,udp,172.17.149.0/25,170.70.49.157/32,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_GUA_reply_1,permit,icmp,172.17.100.0/24,0.0.0.0/0,any,any
+acl_GUA_request_1,permit,icmp,172.17.100.0/24,0.0.0.0/0,any,any
+acl_Permit_IP_170.70.13.29,permit,ip,172.17.100.0/24,170.70.13.29/32, , 
+acl_Permit_IP_170.70.13.30,permit,ip,172.17.100.0/24,170.70.13.30/32, , 
+acl_Permit_IP_170.70.13.50,permit,ip,172.17.100.0/24,170.70.13.50/32, , 
+acl_Permit_IP_170.70.13.144,permit,ip,172.17.100.0/24,170.70.13.144/32, , 
+acl_Permit_IP_170.70.13.165,permit,ip,172.17.100.0/24,170.70.13.165/32, , 
+acl_Permit_IP_170.70.13.167,permit,ip,172.17.100.0/24,170.70.13.167/32, , 
+acl_Permit_IP_170.70.48.17,permit,ip,172.17.100.0/24,170.70.48.17/32, , 
+acl_Permit_IP_170.70.48.18,permit,ip,172.17.100.0/24,170.70.48.18/32, , 
+acl_Permit_IP_170.70.48.240,permit,ip,172.17.100.0/24,170.70.48.240/32, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_GUA_request_170.70.1.154,permit,icmp,172.17.0.0/16,170.70.1.154/32,any,any
+acl_GUA_reply_170.70.1.203,permit,icmp,172.17.0.0/16,170.70.1.203/32,any,any
+acl_GUA_request_170.70.1.203,permit,icmp,172.17.0.0/16,170.70.1.203/32,any,any
+acl_GUA_reply_170.70.65.0,permit,icmp,172.17.0.0/16,170.70.65.0/24,any,any
+acl_GUA_request_170.70.65.0,permit,icmp,172.17.0.0/16,170.70.65.0/24,any,any
+acl_GUA_reply_170.70.25.0,permit,icmp,172.17.0.0/16,170.70.25.0/24,any,any
+acl_GUA_request_170.70.25.0,permit,icmp,172.17.0.0/16,170.70.25.0/24,any,any
+acl_Permit_TCP_170.70.25.0_3,permit,tcp,172.17.81.0/24,170.70.25.0/26,3000-3001,any
+acl_Permit_UFP_170.70.25.11_1,permit,udp,172.17.0.0/16,170.70.25.11/32,any,52440
+acl_Permit_UFP_170.70.25.11_2,permit,udp,172.17.0.0/16,170.70.25.11/32,any,52442
+acl_Permit_UFP_170.70.25.12_1,permit,udp,172.17.0.0/16,170.70.25.12/32,any,52440
+acl_Permit_UFP_170.70.25.15_1,permit,udp,172.17.0.0/16,170.70.25.15/32,any,52440
+acl_Permit_UFP_170.70.25.23_1,permit,udp,172.17.0.0/16,170.70.25.23/32,any,52440
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UPD_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UPD_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UPD_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Deny_IP_172.16.0.0,deny,ip,172.16.0.0/16,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_Permit_UDP_170.70.48.18,permit,udp,172.17.87.0/24,170.70.48.18/32,67,any
+acl_Permit_UDP_170.70.48.17,permit,udp,172.17.87.0/24,170.70.48.17/32,67,any
+acl_Permit_UDP_170.70.48.240,permit,udp,172.17.87.0/24,170.70.48.240/32,67,any
+acl_SubImpresoras_reply_1,permit,icmp,172.17.87.0/24,170.70.66.0/24,any,any
+acl_SubImpresoras_request_1,permit,icmp,172.17.87.0/24,170.70.66.0/24,any,any
+acl_SubImpresoras_reply_2,permit,icmp,172.17.87.0/24,170.70.13.0/24,any,any
+acl_SubImpresoras_request_2,permit,icmp,172.17.87.0/24,170.70.13.0/24,any,any
+acl_SubImpresoras_reply_7,permit,icmp,172.17.87.0/24,170.70.38.0/24,any,any
+acl_SubImpresoras_request_7,permit,icmp,172.17.87.0/24,170.70.38.0/24,any,any
+acl_SubImpresoras_reply_3,permit,icmp,172.17.87.0/24,170.70.49.0/24,any,any
+acl_SubImpresoras_request_3,permit,icmp,172.17.87.0/24,170.70.49.0/24,any,any
+acl_SubImpresoras_reply_4,permit,icmp,172.17.87.0/24,170.70.1.0/24,any,any
+acl_SubImpresoras_request_4,permit,icmp,172.17.87.0/24,170.70.1.0/24,any,any
+acl_SubImpresoras_reply_5,permit,icmp,172.17.87.0/24,170.70.41.0/24,any,any
+acl_SubImpresoras_request_5,permit,icmp,172.17.87.0/24,170.70.41.0/24,any,any
+acl_SubImpresoras_reply_6,permit,icmp,172.17.87.0/24,170.70.65.241/32,any,any
+acl_SubImpresoras_request_6,permit,icmp,172.17.87.0/24,170.70.65.241/32,any,any
+acl_SubImpresoras_reply_8,permit,icmp,172.17.87.0/24,170.70.65.245/32,any,any
+acl_SubImpresoras_request_8,permit,icmp,172.17.87.0/24,170.70.65.245/32,any,any
+acl_Deny_ICMP,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Permit_UDP_170.70.13.30,permit,udp,172.17.87.0/24,170.70.13.30/32,any,any
+acl_Permit_UDP_170.70.13.50,permit,udp,172.17.87.0/24,170.70.13.50/32,any,any
+acl_Permit_UDP_170.70.13.29,permit,udp,172.17.87.0/24,170.70.13.29/32,any,any
+acl_Permit_TCP_170.70.13.190,permit,tcp,172.17.87.0/24,170.70.13.190/32,any,any
+acl_Permit_TCP_170.70.13.29_1,permit,tcp,172.17.87.0/24,170.70.13.29/32,any,any
+acl_Permit_TCP_170.70.13.29_2,permit,tcp,172.17.87.0/24,170.70.13.29/32,any,any
+acl_Permit_UDP_170.70.13.29_1,permit,udp,172.17.87.0/24,170.70.13.29/32,any,any
+acl_Permit_TCP_170.70.13.30_1,permit,tcp,172.17.87.0/24,170.70.13.30/32,any,any
+acl_Permit_TCP_170.70.13.30_2,permit,tcp,172.17.87.0/24,170.70.13.30/32,any,any
+acl_Permit_UDP_170.70.13.30_1,permit,udp,172.17.87.0/24,170.70.13.30/32,any,any
+acl_Permit_TCP_170.70.13.50_1,permit,tcp,172.17.87.0/24,170.70.13.50/32,any,any
+acl_Permit_TCP_170.70.13.50_2,permit,tcp,172.17.87.0/24,170.70.13.50/32,any,any
+acl_Permit_UDP_170.70.13.50_1,permit,udp,172.17.87.0/24,170.70.13.50/32,any,any
+acl_Permit_TCP_170.70.13.199_1,permit,tcp,172.17.87.0/24,170.70.13.199/32,any,any
+acl_Permit_TCP_170.70.13.199_2,permit,tcp,172.17.87.0/24,170.70.13.199/32,any,any
+acl_Permit_UDP_170.70.13.199_1,permit,udp,172.17.87.0/24,170.70.13.199/32,any,any
+acl_Permit_TCP_170.70.49.103_1,permit,tcp,172.17.87.0/24,170.70.49.103/32,843,any
+acl_Permit_TCP_170.70.49.103_2,permit,tcp,172.17.87.0/24,170.70.49.103/32,3910,any
+acl_Permit_TCP_170.70.49.103_3,permit,tcp,172.17.87.0/24,170.70.49.103/32,7627,any
+acl_Permit_TCP_170.70.49.103_4,permit,tcp,172.17.87.0/24,170.70.49.103/32,9100,any
+acl_Permit_TCP_170.70.49.103_5,permit,tcp,172.17.87.0/24,170.70.49.103/32,9400,any
+acl_Permit_TCP_170.70.49.103_6,permit,tcp,172.17.87.0/24,170.70.49.103/32,59113,any
+acl_Permit_TCP_170.70.49.103_7,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,80
+acl_Permit_TCP_170.70.49.103_8,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,443
+acl_Permit_TCP_170.70.49.103_9,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,389
+acl_Permit_TCP_170.70.49.103_10,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,636
+acl_Permit_TCP_170.70.49.103_11,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,1443
+acl_Permit_TCP_170.70.49.103_12,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,2000
+acl_Permit_TCP_170.70.49.103_13,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,any
+acl_Permit_TCP_170.70.49.103_14,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,9100
+acl_Permit_TCP_170.70.49.103_15,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,any
+acl_Permit_TCP_170.70.49.103_16,permit,tcp,172.17.87.0/24,170.70.49.103/32,any,65211
+acl_Permit_UDP_170.70.49.103_17,permit,udp,172.17.87.0/24,170.70.49.103/32,162,any
+acl_Permit_UDP_170.70.49.103_18,permit,udp,172.17.87.0/24,170.70.49.103/32,445,any
+acl_Permit_UDP_170.70.49.103_19,permit,udp,172.17.87.0/24,170.70.49.103/32,1434,any
+acl_Permit_UDP_170.70.49.103_20,permit,udp,172.17.87.0/24,170.70.49.103/32,2493,any
+acl_Permit_UDP_170.70.49.103_21,permit,udp,172.17.87.0/24,170.70.49.103/32,3702,any
+acl_Permit_UDP_170.70.49.103_22,permit,udp,172.17.87.0/24,170.70.49.103/32,8000,any
+acl_Permit_UDP_170.70.49.103_23,permit,udp,172.17.87.0/24,170.70.49.103/32,any,69
+acl_Permit_UDP_170.70.49.103_24,permit,udp,172.17.87.0/24,170.70.49.103/32,any,427
+acl_Permit_UDP_170.70.49.103_25,permit,udp,172.17.87.0/24,170.70.49.103/32,any,2493
+acl_Permit_UDP_170.70.49.103_26,permit,udp,172.17.87.0/24,170.70.49.103/32,any,any
+acl_Permit_TCP_170.70.49.191_1,permit,tcp,172.17.87.0/24,170.70.49.191/32,843,any
+acl_Permit_TCP_170.70.49.191_2,permit,tcp,172.17.87.0/24,170.70.49.191/32,3910,any
+acl_Permit_TCP_170.70.49.191_3,permit,tcp,172.17.87.0/24,170.70.49.191/32,7627,any
+acl_Permit_TCP_170.70.49.191_4,permit,tcp,172.17.87.0/24,170.70.49.191/32,9100,any
+acl_Permit_TCP_170.70.49.191_5,permit,tcp,172.17.87.0/24,170.70.49.191/32,9400,any
+acl_Permit_TCP_170.70.49.191_6,permit,tcp,172.17.87.0/24,170.70.49.191/32,59113,any
+acl_Permit_TCP_170.70.49.191_7,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,80
+acl_Permit_TCP_170.70.49.191_8,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,443
+acl_Permit_TCP_170.70.49.191_9,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,389
+acl_Permit_TCP_170.70.49.191_10,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,636
+acl_Permit_TCP_170.70.49.191_11,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,1443
+acl_Permit_TCP_170.70.49.191_12,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,2000
+acl_Permit_TCP_170.70.49.191_13,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,any
+acl_Permit_TCP_170.70.49.191_14,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,9100
+acl_Permit_TCP_170.70.49.191_15,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,any
+acl_Permit_TCP_172.17.90.0,permit,tcp,172.17.87.0/24,170.70.49.191/32,any,65211
+acl_Permit_UDP_170.70.49.191_1,permit,udp,172.17.87.0/24,170.70.49.191/32,162,any
+acl_Permit_UDP_170.70.49.191_2,permit,udp,172.17.87.0/24,170.70.49.191/32,445,any
+acl_Permit_UDP_170.70.49.191_3,permit,udp,172.17.87.0/24,170.70.49.191/32,1434,any
+acl_Permit_UDP_170.70.49.191_4,permit,udp,172.17.87.0/24,170.70.49.191/32,2493,any
+acl_Permit_UDP_170.70.49.191_5,permit,udp,172.17.87.0/24,170.70.49.191/32,3702,any
+acl_Permit_UDP_170.70.49.191_6,permit,udp,172.17.87.0/24,170.70.49.191/32,8000,any
+acl_Permit_UDP_170.70.49.191_7,permit,udp,172.17.87.0/24,170.70.49.191/32,any,69
+acl_Permit_UDP_170.70.49.191_8,permit,udp,172.17.87.0/24,170.70.49.191/32,any,427
+acl_Permit_UDP_170.70.49.191_9,permit,udp,172.17.87.0/24,170.70.49.191/32,any,2493
+acl_Permit_UDP_170.70.49.191_10,permit,udp,172.17.87.0/24,170.70.49.191/32,any,any
+acl_Permit_TCP_170.70.13.30_10,permit,tcp,172.17.87.0/24,170.70.13.30/32,any,389
+acl_Permit_TCP_170.70.13.134_1,permit,tcp,172.17.87.0/24,170.70.13.134/32,843,any
+acl_Permit_TCP_170.70.13.134_2,permit,tcp,172.17.87.0/24,170.70.13.134/32,3910,any
+acl_Permit_TCP_170.70.13.134_3,permit,tcp,172.17.87.0/24,170.70.13.134/32,7627,any
+acl_Permit_TCP_170.70.13.134_4,permit,tcp,172.17.87.0/24,170.70.13.134/32,9100,any
+acl_Permit_TCP_170.70.13.134_5,permit,tcp,172.17.87.0/24,170.70.13.134/32,9400,any
+acl_Permit_TCP_170.70.13.134_6,permit,tcp,172.17.87.0/24,170.70.13.134/32,59113,any
+acl_Permit_TCP_170.70.13.134_7,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,80
+acl_Permit_TCP_170.70.13.134_8,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,443
+acl_Permit_TCP_170.70.13.134_9,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,389
+acl_Permit_TCP_170.70.13.134_10,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,636
+acl_Permit_TCP_170.70.13.134_11,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,1443
+acl_Permit_TCP_170.70.13.134_12,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,2000
+acl_Permit_TCP_170.70.13.134_13,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,any
+acl_Permit_TCP_170.70.13.134_14,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,9100
+acl_Permit_TCP_170.70.13.134_15,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,any
+acl_Permit_TCP_170.70.13.134_16,permit,tcp,172.17.87.0/24,170.70.13.134/32,any,65211
+acl_Permit_UDP_170.70.13.134_1,permit,udp,172.17.87.0/24,170.70.13.134/32,162,any
+acl_Permit_UDP_170.70.13.134_2,permit,udp,172.17.87.0/24,170.70.13.134/32,445,any
+acl_Permit_UDP_170.70.13.134_3,permit,udp,172.17.87.0/24,170.70.13.134/32,1434,any
+acl_Permit_UDP_170.70.13.134_4,permit,udp,172.17.87.0/24,170.70.13.134/32,2493,any
+acl_Permit_UDP_170.70.13.134_5,permit,udp,172.17.87.0/24,170.70.13.134/32,3702,any
+acl_Permit_UDP_170.70.13.134_6,permit,udp,172.17.87.0/24,170.70.13.134/32,8000,any
+acl_Permit_UDP_170.70.13.134_7,permit,udp,172.17.87.0/24,170.70.13.134/32,any,69
+acl_Permit_UDP_170.70.13.134_8,permit,udp,172.17.87.0/24,170.70.13.134/32,any,427
+acl_Permit_UDP_170.70.13.134_9,permit,udp,172.17.87.0/24,170.70.13.134/32,any,2493
+acl_Permit_UDP_170.70.13.134_10,permit,udp,172.17.87.0/24,170.70.13.134/32,any,any
+acl_Permit_TCP_170.70.13.135_1,permit,tcp,172.17.87.0/24,170.70.13.135/32,843,any
+acl_Permit_TCP_170.70.13.135_2,permit,tcp,172.17.87.0/24,170.70.13.135/32,3910,any
+acl_Permit_TCP_170.70.13.135_3,permit,tcp,172.17.87.0/24,170.70.13.135/32,7627,any
+acl_Permit_TCP_170.70.13.135_4,permit,tcp,172.17.87.0/24,170.70.13.135/32,9100,any
+acl_Permit_TCP_170.70.13.135_5,permit,tcp,172.17.87.0/24,170.70.13.135/32,9400,any
+acl_Permit_TCP_170.70.13.135_6,permit,tcp,172.17.87.0/24,170.70.13.135/32,59113,any
+acl_Permit_TCP_170.70.13.135_7,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,80
+acl_Permit_TCP_170.70.13.135_8,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,443
+acl_Permit_TCP_170.70.13.135_9,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,389
+acl_Permit_TCP_170.70.13.135_10,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,636
+acl_Permit_TCP_170.70.13.135_11,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,1443
+acl_Permit_TCP_170.70.13.135_12,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,2000
+acl_Permit_TCP_170.70.13.135_13,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,any
+acl_Permit_TCP_170.70.13.135_14,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,9100
+acl_Permit_TCP_170.70.13.135_15,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,any
+acl_Permit_TCP_170.70.13.135_16,permit,tcp,172.17.87.0/24,170.70.13.135/32,any,65211
+acl_Permit_UDP_170.70.13.135_1,permit,udp,172.17.87.0/24,170.70.13.135/32,162,any
+acl_Permit_UDP_170.70.13.135_2,permit,udp,172.17.87.0/24,170.70.13.135/32,445,any
+acl_Permit_UDP_170.70.13.135_3,permit,udp,172.17.87.0/24,170.70.13.135/32,1434,any
+acl_Permit_UDP_170.70.13.135_4,permit,udp,172.17.87.0/24,170.70.13.135/32,2493,any
+acl_Permit_UDP_170.70.13.135_5,permit,udp,172.17.87.0/24,170.70.13.135/32,3702,any
+acl_Permit_UDP_170.70.13.135_6,permit,udp,172.17.87.0/24,170.70.13.135/32,8000,any
+acl_Permit_UDP_170.70.13.135_7,permit,udp,172.17.87.0/24,170.70.13.135/32,any,69
+acl_Permit_UDP_170.70.13.135_8,permit,udp,172.17.87.0/24,170.70.13.135/32,any,427
+acl_Permit_UDP_170.70.13.135_9,permit,udp,172.17.87.0/24,170.70.13.135/32,any,2493
+acl_Permit_UDP_170.70.13.135_10,permit,udp,172.17.87.0/24,170.70.13.135/32,any,any
+acl_Permit_TCP_170.70.49.20_1,permit,tcp,172.17.87.0/24,170.70.49.20/32,843,any
+acl_Permit_TCP_170.70.49.20_2,permit,tcp,172.17.87.0/24,170.70.49.20/32,3910,any
+acl_Permit_TCP_170.70.49.20_3,permit,tcp,172.17.87.0/24,170.70.49.20/32,7627,any
+acl_Permit_TCP_170.70.49.20_4,permit,tcp,172.17.87.0/24,170.70.49.20/32,9100,any
+acl_Permit_TCP_170.70.49.20_5,permit,tcp,172.17.87.0/24,170.70.49.20/32,9400,any
+acl_Permit_TCP_170.70.49.20_6,permit,tcp,172.17.87.0/24,170.70.49.20/32,59113,any
+acl_Permit_TCP_170.70.49.20_7,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,80
+acl_Permit_TCP_170.70.49.20_8,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,443
+acl_Permit_TCP_170.70.49.20_9,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,389
+acl_Permit_TCP_170.70.49.20_10,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,636
+acl_Permit_TCP_170.70.49.20_11,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,1443
+acl_Permit_TCP_170.70.49.20_12,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,2000
+acl_Permit_TCP_170.70.49.20_13,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,any
+acl_Permit_TCP_170.70.49.20_14,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,9100
+acl_Permit_TCP_170.70.49.20_15,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,any
+acl_Permit_TCP_170.70.49.20_16,permit,tcp,172.17.87.0/24,170.70.49.20/32,any,65211
+acl_Permit_UDP_170.70.49.20_1,permit,udp,172.17.87.0/24,170.70.49.20/32,162,any
+acl_Permit_UDP_170.70.49.20_2,permit,udp,172.17.87.0/24,170.70.49.20/32,445,any
+acl_Permit_UDP_170.70.49.20_3,permit,udp,172.17.87.0/24,170.70.49.20/32,1434,any
+acl_Permit_UDP_170.70.49.20_4,permit,udp,172.17.87.0/24,170.70.49.20/32,2493,any
+acl_Permit_UDP_170.70.49.20_5,permit,udp,172.17.87.0/24,170.70.49.20/32,3702,any
+acl_Permit_UDP_170.70.49.20_6,permit,udp,172.17.87.0/24,170.70.49.20/32,8000,any
+acl_Permit_UDP_170.70.49.20_7,permit,udp,172.17.87.0/24,170.70.49.20/32,any,69
+acl_Permit_UDP_170.70.49.20_8,permit,udp,172.17.87.0/24,170.70.49.20/32,any,427
+acl_Permit_UDP_170.70.49.20_9,permit,udp,172.17.87.0/24,170.70.49.20/32,any,2493
+acl_Permit_UDP_170.70.49.20_10,permit,udp,172.17.87.0/24,170.70.49.20/32,any,any
+acl_Permit_TCP_170.70.49.194_1,permit,tcp,172.17.87.0/24,170.70.49.194/32,any,any
+acl_Permit_TCP_170.70.49.194_2,permit,tcp,172.17.87.0/24,170.70.49.194/32,any,any
+acl_Permit_UDP_170.70.49.194_1,permit,udp,172.17.87.0/24,170.70.49.194/32,any,any
+acl_Permit_TCP_170.70.49.195_1,permit,tcp,172.17.87.0/24,170.70.49.195/32,any,8447
+acl_Permit_TCP_170.70.49.195_2,permit,tcp,172.17.87.0/24,170.70.49.195/32,any,any
+acl_Permit_UDP_170.70.49.195_1,permit,udp,172.17.87.0/24,170.70.49.195/32,any,any
+acl_Permit_TCP_170.70.130.184_3,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_6,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_UDP_170.70.130.184_2,permit,udp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_7,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_UDP_170.70.130.184_3,permit,udp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_8,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_UDP_170.70.130.184_4,permit,udp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_UDP_170.70.130.184_5,permit,udp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_2,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_21,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.184_4,permit,tcp,172.17.87.0/24,170.70.130.184/32,any,any
+acl_Permit_TCP_170.70.130.86_1,permit,tcp,172.17.87.0/24,170.70.130.86/32,any,any
+acl_Permit_UDP_170.70.130.86_1,permit,udp,172.17.87.0/24,170.70.130.86/32,any,any
+acl_Permit_TCP_170.70.130.107_1,permit,tcp,172.17.87.0/24,170.70.130.107/32,any,any
+acl_Permit_UDP_170.70.130.107_1,permit,udp,172.17.87.0/24,170.70.130.107/32,any,any
+acl_Permit_TCP_170.70.49.121_1,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_1,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_2,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_3,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_4,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_5,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_5,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_6,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_3,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_7,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_4,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_8,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_172.17.90.0,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_9,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_172.17.90.0_20,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_10,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_11,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_12,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_6,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_13,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_7,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.121_14,permit,tcp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_UDP_170.70.49.121_8,permit,udp,172.17.87.0/24,170.70.49.121/32,any,any
+acl_Permit_TCP_170.70.49.123_1,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_udp_170.70.49.123_1,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_2,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_3,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_4,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_5,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_2,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_6,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_3,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_7,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_4,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_8,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_5,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_9,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_6,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_10,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_11,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_12,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_7,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_13,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_8,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_TCP_170.70.49.123_14,permit,tcp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_UDP_170.70.49.123_9,permit,udp,172.17.87.0/24,170.70.49.123/32,any,any
+acl_Permit_IP_170.70.38.95,permit,ip,172.17.187.175/32,170.70.38.95/32, , 
+acl_Permit_IP_170.70.19.42,permit,ip,172.17.187.0/24,170.70.19.42/32, , 
+acl_Permit_IP_170.70.19.62,permit,ip,172.17.187.0/24,170.70.19.62/32, , 
+acl_Permit_IP_170.70.19.59,permit,ip,172.17.187.0/24,170.70.19.59/32, , 
+acl_Permit_IP_170.70.19.56,permit,ip,172.17.187.0/24,170.70.19.56/32, , 
+acl_Permit_IP_170.70.19.53,permit,ip,172.17.187.0/24,170.70.19.53/32, , 
+acl_Permit_IP_170.70.19.55,permit,ip,172.17.187.0/24,170.70.19.55/32, , 
+acl_Permit_TCP_170.70.130.136,permit,tcp,172.17.87.0/24,170.70.130.136/32,any,any
+acl_Permit_TCP_170.70.0.0_2,permit,tcp,172.17.87.0/24,170.70.0.0/16,any,any
+acl_Permit_TCP_170.70.0.0_3,permit,tcp,172.17.87.0/24,170.70.0.0/16,any,any
+acl_Permit_TCP_170.70.0.0_4,permit,tcp,172.17.87.0/24,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_5,permit,udp,172.17.87.0/24,170.70.0.0/16,any,any
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UPD_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4444
+acl_Deny_UPD_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,4996
+acl_Deny_UPD_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1024-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_UPS_5M18_reply_1,permit,icmp,172.17.110.69/28,0.0.0.0/0,any,any
+acl_UPS_5M18_reply_2,permit,icmp,172.17.110.129/28,0.0.0.0/0,any,any
+acl_UPS_5M18_reply_3,permit,icmp,172.17.110.199/27,0.0.0.0/0,any,any
+acl_UPS_5M18_request_1,permit,icmp,172.17.110.69/28,0.0.0.0/0,any,any
+acl_UPS_5M18_request_2,permit,icmp,172.17.110.129/28,0.0.0.0/0,any,any
+acl_UPS_5M18_request_3,permit,icmp,172.17.110.199/27,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+Permit_TCP_BMSCADA5,permit,tcp,172.17.110.69/28,170.70.13.153/32,any,any
+Permit_UDP_BMSCADA5,permit,udp,172.17.110.69/28,170.70.13.153/32,any,any
+Permit_TCP_BMSCADA6,permit,tcp,172.17.110.69/28,170.70.13.247/32,any,any
+Permit_UDP_BMSCADA6,permit,udp,172.17.110.69/28,170.70.13.247/32,any,any
+Permit_UDP_SV_INMUEBLES,permit,udp,172.17.110.69/28,170.70.74.83/32,any,any
+Permit_TCP_BMTRACERC,permit,tcp,172.17.110.69/28,170.70.49.93/32,any,any
+Permit_UDP_BMTRACERC,permit,udp,172.17.110.69/28,170.70.49.93/32,any,any
+Permit_UDP_HPOV4_MON,permit,udp,172.17.110.69/28,170.70.65.244/32,any,any
+Permit_UDP_NTP1,permit,udp,172.17.110.69/28,170.70.49.40/32,any,123
+Permit_UDP_NTP2,permit,udp,172.17.110.69/28,170.70.49.157/32,any,123
+Permit_TCP_DNS,permit,tcp,172.17.110.69/28,170.70.13.30/32,any,53
+Permit_UDP_DNS,permit,udp,172.17.110.69/28,170.70.13.30/32,any,53
+Permit_TCP_SMTP_I1,permit,tcp,172.17.110.69/28,170.70.13.190/32,any,25
+Permit_TCP_BMSCADA5_I2,permit,tcp,172.17.110.129/28,170.70.13.153/32,any,any
+Permit_UDP_BMSCADA5_I2,permit,udp,172.17.110.129/28,170.70.13.153/32,any,any
+Permit_TCP_BMSCADA6_I2,permit,tcp,172.17.110.129/28,170.70.13.247/32,any,any
+Permit_UDP_BMSCADA6_I2,permit,udp,172.17.110.129/28,170.70.13.247/32,any,any
+Permit_UDP_SV_INMUEBLES_I2,permit,udp,172.17.110.129/28,170.70.74.83/32,any,any
+Permit_TCP_BMTRACERC_I2,permit,tcp,172.17.110.129/28,170.70.49.93/32,any,any
+Permit_UDP_BMTRACERC_I2,permit,udp,172.17.110.129/28,170.70.49.93/32,any,any
+Permit_UDP_HPOV4_MON_I2,permit,udp,172.17.110.129/28,170.70.65.244/32,any,any
+Permit_UDP_NTP1_I2,permit,udp,172.17.110.129/28,170.70.49.40/32,any,123
+Permit_UDP_NTP2_I2,permit,udp,172.17.110.129/28,170.70.49.157/32,any,123
+Permit_TCP_DNS_I2,permit,tcp,172.17.110.129/28,170.70.13.30/32,any,53
+Permit_UDP_DNS_I2,permit,udp,172.17.110.129/28,170.70.13.30/32,any,53
+Permit_TCP_ION1_I2,permit,tcp,172.17.110.129/28,172.17.175.10/32,any,any
+Permit_TCP_ION2_I2,permit,tcp,172.17.110.129/28,172.17.175.11/32,any,any
+Permit_TCP_SMTP_I2,permit,tcp,172.17.110.129/28,170.70.13.190/32,any,25
+Permit_TCP_BMSCADA5_I3,permit,tcp,172.17.110.199/27,170.70.13.153/32,any,any
+Permit_UDP_BMSCADA5_I3,permit,udp,172.17.110.199/27,170.70.13.153/32,any,any
+Permit_TCP_BMSCADA6_I3,permit,tcp,172.17.110.199/27,170.70.13.247/32,any,any
+Permit_UDP_BMSCADA6_I3,permit,udp,172.17.110.199/27,170.70.13.247/32,any,any
+Permit_UDP_SV_INMUEBLES_I3,permit,udp,172.17.110.199/27,170.70.74.83/32,any,any
+Permit_TCP_BMTRACERC_I3,permit,tcp,172.17.110.199/27,170.70.49.93/32,any,any
+Permit_UDP_BMTRACERC_I3,permit,udp,172.17.110.199/27,170.70.49.93/32,any,any
+Permit_UDP_HPOV4_MON_I3,permit,udp,172.17.110.199/27,170.70.65.244/32,any,any
+Permit_UDP_NTP1_I3,permit,udp,172.17.110.199/27,170.70.49.40/32,any,123
+Permit_UDP_NTP2_I3,permit,udp,172.17.110.199/27,170.70.49.157/32,any,123
+Permit_TCP_DNS_I3,permit,tcp,172.17.110.199/27,170.70.13.30/32,any,53
+Permit_UDP_DNS_I3,permit,udp,172.17.110.199/27,170.70.13.30/32,any,53
+Permit_TCP_HTTP,permit,tcp,0.0.0.0/0,0.0.0.0/0,80,any
+Permit_TCP_HTTPS,permit,tcp,0.0.0.0/0,0.0.0.0/0,443,any
+Permit_TCP_SMTP_I3,permit,tcp,172.17.110.199/27,170.70.13.190/32,any,25
+Permit_TCP_ETB_1,permit,tcp,172.17.110.69/28,170.70.99.116/32,any,any
+Permit_UDP_ETB_1,permit,udp,172.17.110.69/28,170.70.99.116/32,any,any
+Permit_TCP_ETB_2,permit,tcp,172.17.110.69/28,170.70.1.71/32,any,any
+Permit_UDP_ETB_2,permit,udp,172.17.110.69/28,170.70.1.71/32,any,any
+Permit_TCP_ETB_3,permit,tcp,172.17.110.69/28,170.70.1.84/32,any,any
+Permit_UDP_ETB_3,permit,udp,172.17.110.69/28,170.70.1.84/32,any,any
+Permit_TCP_ETB_4,permit,tcp,172.17.110.69/28,170.70.99.81/32,any,any
+Permit_UDP_ETB_4,permit,udp,172.17.110.69/28,170.70.99.81/32,any,any
+Permit_TCP_ETB_5,permit,tcp,172.17.110.69/28,170.70.1.60/32,any,any
+Permit_UDP_ETB_5,permit,udp,172.17.110.69/28,170.70.1.60/32,any,any
+Permit_TCP_ETB_6,permit,tcp,172.17.110.69/28,170.70.1.72/32,any,any
+Permit_UDP_ETB_6,permit,udp,172.17.110.69/28,170.70.1.72/32,any,any
+Permit_TCP_ETB_7,permit,tcp,172.17.110.69/28,170.70.99.30/32,any,any
+Permit_UDP_ETB_7,permit,udp,172.17.110.69/28,170.70.99.30/32,any,any
+Permit_TCP_ETB_8,permit,tcp,172.17.110.69/28,170.70.41.245/32,any,any
+Permit_UDP_ETB_8,permit,udp,172.17.110.69/28,170.70.41.245/32,any,any
+Permit_TCP_ETB_9,permit,tcp,172.17.110.69/28,170.70.99.54/32,any,any
+Permit_UDP_ETB_9,permit,udp,172.17.110.69/28,170.70.99.54/32,any,any
+Permit_TCP_ETB_10,permit,tcp,172.17.110.69/28,170.70.1.21/32,any,any
+Permit_UDP_ETB_10,permit,udp,172.17.110.69/28,170.70.1.21/32,any,any
+Permit_TCP_ETB_11,permit,tcp,172.17.110.69/28,170.70.28.108/32,any,any
+Permit_UDP_ETB_11,permit,udp,172.17.110.69/28,170.70.28.108/32,any,any
+Permit_TCP_ETB_12,permit,tcp,172.17.110.69/28,170.70.1.28/32,any,any
+Permit_UDP_ETB_12,permit,udp,172.17.110.69/28,170.70.1.28/32,any,any
+Permit_TCP_ETB_13,permit,tcp,172.17.110.69/28,170.70.68.57/32,any,any
+Permit_UDP_ETB_13,permit,udp,172.17.110.69/28,170.70.68.57/32,any,any
+Permit_TCP_EXT_1,permit,tcp,172.17.110.69/28,170.70.52.71/32,any,any
+Permit_UDP_EXT_1,permit,udp,172.17.110.69/28,170.70.52.71/32,any,any
+Permit_TCP_EXT_2,permit,tcp,172.17.110.69/28,170.70.52.72/32,any,any
+Permit_UDP_EXT_2,permit,udp,172.17.110.69/28,170.70.52.72/32,any,any
+Permit_TCP_ETB_1_I2,permit,tcp,172.17.110.129/28,170.70.99.116/32,any,any
+Permit_UDP_ETB_1_I2,permit,udp,172.17.110.129/28,170.70.99.116/32,any,any
+Permit_TCP_ETB_2_I2,permit,tcp,172.17.110.129/28,170.70.1.71/32,any,any
+Permit_UDP_ETB_2_I2,permit,udp,172.17.110.129/28,170.70.1.71/32,any,any
+Permit_TCP_ETB_3_I2,permit,tcp,172.17.110.129/28,170.70.1.84/32,any,any
+Permit_UDP_ETB_3_I2,permit,udp,172.17.110.129/28,170.70.1.84/32,any,any
+Permit_TCP_ETB_4_I2,permit,tcp,172.17.110.129/28,170.70.99.81/32,any,any
+Permit_UDP_ETB_4_I2,permit,udp,172.17.110.129/28,170.70.99.81/32,any,any
+Permit_TCP_ETB_5_I2,permit,tcp,172.17.110.129/28,170.70.1.60/32,any,any
+Permit_UDP_ETB_5_I2,permit,udp,172.17.110.129/28,170.70.1.60/32,any,any
+Permit_TCP_ETB_6_I2,permit,tcp,172.17.110.129/28,170.70.1.72/32,any,any
+Permit_UDP_ETB_6_I2,permit,udp,172.17.110.129/28,170.70.1.72/32,any,any
+Permit_TCP_ETB_7_I2,permit,tcp,172.17.110.129/28,170.70.99.30/32,any,any
+Permit_UDP_ETB_7_I2,permit,udp,172.17.110.129/28,170.70.99.30/32,any,any
+Permit_TCP_ETB_8_I2,permit,tcp,172.17.110.129/28,170.70.41.245/32,any,any
+Permit_UDP_ETB_8_I2,permit,udp,172.17.110.129/28,170.70.41.245/32,any,any
+Permit_TCP_ETB_9_I2,permit,tcp,172.17.110.129/28,170.70.99.54/32,any,any
+Permit_UDP_ETB_9_I2,permit,udp,172.17.110.129/28,170.70.99.54/32,any,any
+Permit_TCP_ETB_10_I2,permit,tcp,172.17.110.129/28,170.70.1.21/32,any,any
+Permit_UDP_ETB_10_I2,permit,udp,172.17.110.129/28,170.70.1.21/32,any,any
+Permit_TCP_ETB_11_I2,permit,tcp,172.17.110.129/28,170.70.28.108/32,any,any
+Permit_UDP_ETB_11_I2,permit,udp,172.17.110.129/28,170.70.28.108/32,any,any
+Permit_TCP_ETB_12_I2,permit,tcp,172.17.110.129/28,170.70.1.28/32,any,any
+Permit_UDP_ETB_12_I2,permit,udp,172.17.110.129/28,170.70.1.28/32,any,any
+Permit_TCP_ETB_13_I2,permit,tcp,172.17.110.129/28,170.70.68.57/32,any,any
+Permit_UDP_ETB_13_I2,permit,udp,172.17.110.129/28,170.70.68.57/32,any,any
+Permit_TCP_EXT_1_I2,permit,tcp,172.17.110.129/28,170.70.52.71/32,any,any
+Permit_UDP_EXT_1_I2,permit,udp,172.17.110.129/28,170.70.52.71/32,any,any
+Permit_TCP_EXT_2_I2,permit,tcp,172.17.110.129/28,170.70.52.72/32,any,any
+Permit_UDP_EXT_2_I2,permit,udp,172.17.110.129/28,170.70.52.72/32,any,any
+Permit_TCP_ETB_1_I3,permit,tcp,172.17.110.199/27,170.70.99.116/32,any,any
+Permit_UDP_ETB_1_I3,permit,udp,172.17.110.199/27,170.70.99.116/32,any,any
+Permit_TCP_ETB_2_I3,permit,tcp,172.17.110.199/27,170.70.1.71/32,any,any
+Permit_UDP_ETB_2_I3,permit,udp,172.17.110.199/27,170.70.1.71/32,any,any
+Permit_TCP_ETB_3_I3,permit,tcp,172.17.110.199/27,170.70.1.84/32,any,any
+Permit_UDP_ETB_3_I3,permit,udp,172.17.110.199/27,170.70.1.84/32,any,any
+Permit_TCP_ETB_4_I3,permit,tcp,172.17.110.199/27,170.70.99.81/32,any,any
+Permit_UDP_ETB_4_I3,permit,udp,172.17.110.199/27,170.70.99.81/32,any,any
+Permit_TCP_ETB_5_I3,permit,tcp,172.17.110.199/27,170.70.1.60/32,any,any
+Permit_UDP_ETB_5_I3,permit,udp,172.17.110.199/27,170.70.1.60/32,any,any
+Permit_TCP_ETB_6_I3,permit,tcp,172.17.110.199/27,170.70.1.72/32,any,any
+Permit_UDP_ETB_6_I3,permit,udp,172.17.110.199/27,170.70.1.72/32,any,any
+Permit_TCP_ETB_7_I3,permit,tcp,172.17.110.199/27,170.70.99.30/32,any,any
+Permit_UDP_ETB_7_I3,permit,udp,172.17.110.199/27,170.70.99.30/32,any,any
+Permit_TCP_ETB_8_I3,permit,tcp,172.17.110.199/27,170.70.41.245/32,any,any
+Permit_UDP_ETB_8_I3,permit,udp,172.17.110.199/27,170.70.41.245/32,any,any
+Permit_TCP_ETB_9_I3,permit,tcp,172.17.110.199/27,170.70.99.54/32,any,any
+Permit_UDP_ETB_9_I3,permit,udp,172.17.110.199/27,170.70.99.54/32,any,any
+Permit_TCP_ETB_10_I3,permit,tcp,172.17.110.199/27,170.70.1.21/32,any,any
+Permit_UDP_ETB_10_I3,permit,udp,172.17.110.199/27,170.70.1.21/32,any,any
+Permit_TCP_ETB_11_I3,permit,tcp,172.17.110.199/27,170.70.28.108/32,any,any
+Permit_UDP_ETB_11_I3,permit,udp,172.17.110.199/27,170.70.28.108/32,any,any
+Permit_TCP_ETB_12_I3,permit,tcp,172.17.110.199/27,170.70.1.28/32,any,any
+Permit_UDP_ETB_12_I3,permit,udp,172.17.110.199/27,170.70.1.28/32,any,any
+Permit_TCP_ETB_13_I3,permit,tcp,172.17.110.199/27,170.70.68.57/32,any,any
+Permit_UDP_ETB_13_I3,permit,udp,172.17.110.199/27,170.70.68.57/32,any,any
+Permit_TCP_EXT_1_I3,permit,tcp,172.17.110.199/27,170.70.52.71/32,any,any
+Permit_UDP_EXT_1_I3,permit,udp,172.17.110.199/27,170.70.52.71/32,any,any
+Permit_TCP_EXT_2_I3,permit,tcp,172.17.110.199/27,170.70.52.72/32,any,any
+Permit_UDP_EXT_2_I3,permit,udp,172.17.110.199/27,170.70.52.72/32,any,any
+Permit_TCP_SIST_ELECT,permit,tcp,172.17.110.69/28,172.17.110.0/24,any,any
+Permit_UDP_SIST_ELECT,permit,udp,172.17.110.69/28,172.17.110.0/24,any,any
+Permit_TCP_SIST_ELECT_I2,permit,tcp,172.17.110.129/28,172.17.110.0/24,any,any
+Permit_UDP_SIST_ELECT_I2,permit,udp,172.17.110.129/28,172.17.110.0/24,any,any
+Permit_TCP_SIST_ELECT_I3,permit,tcp,172.17.110.199/27,172.17.110.0/24,any,any
+Permit_UDP_SIST_ELECT_I3,permit,udp,172.17.110.199/27,172.17.110.0/24,any,any
+acl_DENY_TCP_ALL_I1,deny,tcp,172.17.110.69/28,0.0.0.0/0,any,any
+acl_DENY_UDP_ALL_I1,deny,udp,172.17.110.69/28,0.0.0.0/0,any,any
+acl_DENY_TCP_ALL_I2,deny,tcp,172.17.110.129/28,0.0.0.0/0,any,any
+acl_DENY_UDP_ALL_I2,deny,udp,172.17.110.129/28,0.0.0.0/0,any,any
+acl_DENY_TCP_ALL_I3,deny,tcp,172.17.110.199/27,0.0.0.0/0,any,any
+acl_DENY_UDP_ALL_I3,deny,udp,172.17.110.199/27,0.0.0.0/0,any,any
+acl_DENY_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,0.0.0.0/0,68,67
+acl_SubImpresoras_reply_8,permit,icmp,172.16.142.0/23,0.0.0.0/0,any,any
+acl_SubImpresoras_request_8,permit,icmp,172.16.142.0/23,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Permit_TCP_170.70.0.0_2,permit,tcp,172.16.142.0/23,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_1,permit,udp,172.16.142.0/23,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_1,deny,ip,172.16.142.0/23,170.70.0.0/16, , 
+acl_Permit_TCP_170.70.0.0_3,permit,tcp,172.16.142.0/23,172.16.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_2,permit,udp,172.16.142.0/23,172.16.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_2,deny,ip,172.16.142.0/23,172.16.0.0/16, , 
+acl_Permit_TCP_170.70.0.0_4,permit,tcp,172.16.142.0/23,172.17.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_3,permit,udp,172.16.142.0/23,172.17.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_3,deny,ip,172.16.142.0/23,172.17.0.0/16, , 
+acl_Permit_TCP_170.70.0.0_5,permit,tcp,172.16.142.0/23,172.18.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_4,permit,udp,172.16.142.0/23,172.18.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_4,deny,ip,172.16.142.0/23,172.18.0.0/16, , 
+acl_Deny_IP_170.70.0.0_5,deny,ip,172.16.142.0/23,172.24.0.0/16, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,any,68,67
+acl_VozCisco_P3-P5_reply_1,permit,icmp,172.16.144.0/23,0.0.0.0/0,any,any
+acl_VozCisco_P3-P5_request_1,permit,icmp,172.16.144.0/23,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_170.70.0.0_1,permit,tcp,172.16.144.0/23,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_1,permit,udp,172.16.144.0/23,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_1,deny,ip,172.16.144.0/23,170.70.0.0/16, , 
+acl_Permit_TCP_172.16.0.0_2,permit,tcp,172.16.144.0/23,172.16.0.0/16,any,any
+acl_Permit_UDP_172.16.0.0_1,permit,udp,172.16.144.0/23,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0_1,deny,ip,172.16.144.0/23,172.16.0.0/16, , 
+acl_Deny_IP_172.17.0.0_1,deny,ip,172.16.144.0/23,172.17.0.0/16, , 
+acl_Permit_TCP_172.18.0.0_1,permit,tcp,172.16.144.0/23,172.18.0.0/16,any,any
+acl_Permit_UDP_172.18.0.0_1,permit,udp,172.16.144.0/23,172.18.0.0/16,any,any
+acl_Deny_IP_172.18.0.0_1,deny,ip,172.16.144.0/23,172.18.0.0/16, , 
+acl_Deny_IP_172.24.0.0_1,deny,ip,172.16.148.0/23,172.24.0.0/16, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,any,68,67
+acl_VozCisco_5M20_reply_1,permit,icmp,172.16.146.0/24,0.0.0.0/0,any,any
+acl_VozCisco_5M20_request_1,permit,icmp,172.16.146.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_170.70.0.0_1,permit,tcp,172.16.146.0/24,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_1,permit,udp,172.16.146.0/24,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_1,deny,ip,172.16.146.0/24,170.70.0.0/16, , 
+acl_Permit_TCP_172.16.0.0_2,permit,tcp,172.16.146.0/24,172.16.0.0/16,any,any
+acl_Permit_UDP_172.16.0.0_1,permit,udp,172.16.146.0/24,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0_1,deny,ip,172.16.146.0/24,172.16.0.0/16, , 
+acl_Deny_IP_172.17.0.0_1,deny,ip,172.16.146.0/24,172.17.0.0/16, , 
+acl_Permit_TCP_172.18.0.0_1,permit,tcp,172.16.146.0/24,172.18.188.128/25,any,any
+acl_Permit_UDP_172.18.0.0_1,permit,udp,172.16.146.0/24,172.18.188.128/25,any,any
+acl_Deny_IP_172.18.0.0_1,deny,ip,172.16.146.0/24,172.18.0.0/16, , 
+acl_Deny_IP_172.24.0.0_1,deny,ip,172.16.148.0/23,172.24.0.0/16, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_DHCP,permit,udp,0.0.0.0/0,any,68,67
+acl_VozCisco_Bolivar_reply_1,permit,icmp,172.16.147.0/24,0.0.0.0/0,any,any
+acl_VozCisco_Bolivar_request_1,permit,icmp,172.16.147.0/24,0.0.0.0/0,any,any
+acl_Deny_ICMP,deny,icmp,0.0.0.0/0,0.0.0.0/0,any,any
+acl_Permit_TCP_170.70.0.0_1,permit,tcp,172.16.147.0/24,170.70.0.0/16,any,any
+acl_Permit_UDP_170.70.0.0_1,permit,udp,172.16.147.0/24,170.70.0.0/16,any,any
+acl_Deny_IP_170.70.0.0_1,deny,ip,172.16.147.0/24,170.70.0.0/16, , 
+acl_Permit_TCP_172.16.0.0_2,permit,tcp,172.16.147.0/24,172.16.0.0/16,any,any
+acl_Permit_UDP_172.16.0.0_1,permit,udp,172.16.147.0/24,172.16.0.0/16,any,any
+acl_Deny_IP_172.16.0.0_1,deny,ip,172.16.147.0/24,172.16.0.0/16, , 
+acl_Deny_IP_172.17.0.0_1,deny,ip,172.16.147.0/24,172.17.0.0/16, , 
+acl_Permit_TCP_172.18.0.0_1,permit,tcp,172.16.147.0/24,172.18.188.128/25,any,any
+acl_Permit_UDP_172.18.0.0_1,permit,udp,172.16.147.0/24,172.18.188.128/25,any,any
+acl_Deny_IP_172.18.0.0_1,deny,ip,172.16.147.0/24,172.18.0.0/16, , 
+acl_Deny_IP_172.24.0.0_1,deny,ip,172.16.148.0/23,172.24.0.0/16, , 
+acl_Deny_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
+acl_Deny_UDP_4444,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4444
+acl_Deny_UDP_4996,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,4996
+acl_Deny_UDP_69,deny,udp,0.0.0.0/0,0.0.0.0/0,1025-65535,69
+acl_Deny_IP_10.0.0.0,deny,ip,10.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_127.0.0.0,deny,ip,127.0.0.0/24,0.0.0.0/0, , 
+acl_Deny_IP_169.254.0.0,deny,ip,169.254.0.0/16,0.0.0.0/0, , 
+acl_Deny_IP_192.0.0.0,deny,ip,192.0.0.0/8,0.0.0.0/0, , 
+acl_Permit_Any_Any,deny,ip,0.0.0.0/0,0.0.0.0/0, , 
