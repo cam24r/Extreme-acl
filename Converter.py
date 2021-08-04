@@ -67,7 +67,7 @@ for file in files:
       results = parser.result(format='json') [0]
       json_object = json.loads(results)[0]
 
-      print('#### ' + file + " ####")
+#      print('#### ' + file + " ####")
 
       for key in json_object:
          acl_name = key['acl_name']
@@ -81,6 +81,6 @@ for file in files:
          destination_port = ' ' if (protocol == 'ip') else destination_port
          writer(acl_name, action, protocol, source_address, source_port, destination_address, destination_port)
 
-         print(acl_name + " " + action + " " + protocol + " " + source_address + " " + source_port + " " + destination_address + " " + destination_port)
+#         print(acl_name + " " + action + " " + protocol + " " + source_address + " " + source_port + " " + destination_address + " " + destination_port)
 
 
