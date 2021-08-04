@@ -60,8 +60,16 @@ def writer(acl_name, action, protocol, src_add, src_prt, dst_add, dst_prt):
       data_writer = csv.writer(output_file, delimiter=',', quotechar='"')
       data_writer.writerow([acl_name, action, protocol, src_add, src_prt, dst_add, dst_prt])
 
+def filename_writer (filename):
+   with open ('access_list_summary.csv', 'a',newline='') as output_file:
+      data_writer = csv.writer(output_file, delimiter=',', quotechar='"')
+      data_writer.writerow(['\n'])      
+      data_writer.writerow([filename])
+
+
 for file in files:
    if file.endswith('.pol'):
+      filename_writer(file)
       parser = ttp(data = file , template = ttp_template )
       parser.parse()
       results = parser.result(format='json') [0]
